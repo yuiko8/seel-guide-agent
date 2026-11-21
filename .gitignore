@@ -4,3 +4,5 @@ __pycache__/
 var/
 .pytest_cache/
 var.log
+*.bundle
+*.tar.gz
