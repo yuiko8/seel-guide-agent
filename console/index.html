@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+  <meta name="robots" content="noindex">
+  <title>Atlas Ops Console</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="console.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img src="/icon.svg" alt="" width="24" height="24">
+      <div>
+        <div class="brand-name">Atlas Ops</div>
+        <div class="brand-sub" id="env-line">connecting…</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <label class="live"><input type="checkbox" id="live" checked> Live</label>
+      <button class="btn ghost" id="token-btn" hidden>Token</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="traces" aria-selected="true">Traces</button>
+    <button role="tab" data-tab="health">Breakers &amp; chaos</button>
+    <button role="tab" data-tab="tickets">Tickets</button>
+    <button role="tab" data-tab="labels">Labels</button>
+  </nav>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <!-- ===== Traces ===== -->
+  <section class="view" id="view-traces">
+    <div class="stats" id="stats"></div>
+    <div class="toolbar">
+      <div class="seg" id="filter" role="group" aria-label="Filter traces">
+        <button data-only="all" aria-pressed="true">All</button>
+        <button data-only="degraded">Degraded</button>
+        <button data-only="errors">Errors</button>
+        <button data-only="guard">Guard</button>
+        <button data-only="unlabelled">Unlabelled</button>
+        <button data-only="bad">Bad</button>
+      </div>
+      <input type="search" id="q" placeholder="Search user messages" aria-label="Search user messages">
+    </div>
+    <div class="session-filter" id="session-filter" hidden></div>
+    <div class="split">
+      <div class="list" id="trace-list" aria-label="Turns"></div>
+      <aside class="detail" id="detail" hidden></aside>
+    </div>
+  </section>
+
+  <!-- ===== Breakers & chaos ===== -->
+  <section class="view" id="view-health" hidden>
+    <div class="section-head">
+      <h2>Dependencies</h2>
+      <button class="btn danger-ghost" id="clear-faults">Clear all faults</button>
+    </div>
+    <p class="hint">Faults are injected inside the gateway, before the real call. Open breakers fail fast and the agent degrades. Send a message in the <a href="/" target="_blank" rel="noopener">shopper app</a> to see the effect, then check Traces.</p>
+    <div class="deps" id="deps"></div>
+    <h2>Breaker events</h2>
+    <div class="events" id="events"></div>
+  </section>
+
+  <!-- ===== Tickets ===== -->
+  <section class="view" id="view-tickets" hidden>
+    <div class="section-head"><h2>Support tickets</h2></div>
+    <div class="table-wrap"><table class="tbl" id="tickets"></table></div>
+  </section>
+
+  <!-- ===== Labels ===== -->
+  <section class="view" id="view-labels" hidden>
+    <div class="section-head">
+      <h2>Badcase labels</h2>
+      <div class="row-actions">
+        <button class="btn" id="export-bad">Export bad (JSONL)</button>
+        <button class="btn ghost" id="export-all">Export all</button>
+      </div>
+    </div>
+    <p class="hint">Each label replays the conversation up to that turn. The export is the input for the M5 eval set.</p>
+    <div class="labels" id="labels"></div>
+  </section>
+
+  <dialog id="token-dialog">
+    <form method="dialog" class="token-form">
+      <h3>Admin token</h3>
+      <p class="hint">The server has <code>ADMIN_TOKEN</code> set. It is kept in this browser only.</p>
+      <input type="password" id="token-input" autocomplete="off" aria-label="Admin token">
+      <div class="row-actions"><button class="btn ghost" value="cancel">Cancel</button><button class="btn" value="ok">Save</button></div>
+    </form>
+  </dialog>
+
+  <script type="module" src="console.js"></script>
+</body>
+</html>

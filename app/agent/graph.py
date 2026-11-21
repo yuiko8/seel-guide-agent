@@ -100,6 +100,8 @@ class Agent:
         expected_version = state.version
         working = state.model_copy(deep=True)
         trace = Trace(working.session_id, working.turn + 1, request_id)
+        trace.meta = {"prompt_version": prompts.PROMPT_VERSION, "llm_mode": self.s.llm_mode,
+                      "models": [c.model for c in self.chain.clients]}
         turn = Turn(state=working, user_message=user_message, trace=trace, deadline=Deadline(self.s.turn_budget_s))
 
         node, steps = "intake", 0

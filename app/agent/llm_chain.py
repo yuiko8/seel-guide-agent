@@ -36,7 +36,7 @@ class LLMChain:
             msgs = messages
             for repair in range(2):
                 def validate(resp: LLMResponse):
-                    trace.add_usage(resp.input_tokens, resp.output_tokens, resp.cost_usd)
+                    trace.add_usage(resp.input_tokens, resp.output_tokens, resp.cost_usd, model=client.model)
                     if parse is None:
                         return resp, resp.text
                     try:
@@ -48,7 +48,8 @@ class LLMChain:
                         spec, client.complete,
                         dict(task=task, system=system, messages=msgs, json_schema=json_schema,
                              max_tokens=max_tokens, payload=payload),
-                        trace=trace, deadline=deadline, post_validate=validate)
+                        trace=trace, deadline=deadline, post_validate=validate,
+                        span_attrs={"task": task, "model": client.model, "repair": bool(repair)})
                     if i > 0:
                         trace.degrade("llm_fallback_model", f"{task} served by {client.model}")
                     if repair:

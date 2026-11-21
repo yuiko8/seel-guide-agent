@@ -1,6 +1,6 @@
 // App-shell service worker: shell is cache-first (works offline), API is network-only
 // (answers must be fresh; prices and taxes are never served from cache).
-const CACHE = "atlas-shell-v3";
+const CACHE = "atlas-shell-v4";
 const SHELL = ["/", "/index.html", "/styles.css", "/app.js", "/manifest.webmanifest", "/icon.svg"];
 
 self.addEventListener("install", (e) => {
@@ -13,7 +13,8 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
-  if (url.pathname.startsWith("/api/") || e.request.method !== "GET") return;
+  // The ops console is never cached: it must show live data and must not fall back to the shopper shell.
+  if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/console") || e.request.method !== "GET") return;
   e.respondWith(
     fetch(e.request).then((r) => {
       const copy = r.clone();

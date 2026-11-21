@@ -4,7 +4,8 @@ Cross-border shopping agent (RAG + Agent + **Harness**) modelled on Seel's post-
 business, used by the owner to simulate the day-to-day work of an AI product intern at Seel.
 The owner writes in Chinese; reply in Chinese. The shopper-facing app and code are in English.
 
-Read `PLAN.md` (plan + confirmed decisions) and `docs/reports/M2-rag.md`, `docs/reports/M3-protection-handoff.md`
+Read `PLAN.md` (plan + confirmed decisions) and `docs/reports/M2-rag.md`, `docs/reports/M3-protection-handoff.md`,
+`docs/reports/M4-console.md`
 before making changes.
 
 ## Confirmed decisions
@@ -19,18 +20,16 @@ before making changes.
 ## Status
 - M1 done: harness core, state machine, PWA. M2 done: hybrid RAG + cited answers + grounding guard + retrieval evals.
 - M3 done: protection quotes (`app/tools/protection.py`), support hand-off with deduped tickets (`app/tools/tickets.py`).
+- M4 done: ops console at `/console` (`console/`, backend `app/ops.py`): trace list/detail with span waterfall,
+  stats, breaker/chaos panel, tickets, badcase labels (SQLite `labels`) exported as JSONL eval cases
+  (`GET /api/labels/export`). Console endpoints require `X-Admin-Token` when `ADMIN_TOKEN` is set.
+  Never run `mask_pii` over serialized JSON; use `mask_obj`.
 - **The real Claude API has not been exercised yet** - everything so far ran on MockLLM. First thing in a session
   with `ANTHROPIC_API_KEY`: run the scenarios against the real model and compare with mock (routing accuracy,
   guard violations, latency, cost per turn).
 
-## Next: M4 ops console (`console/`, mounted at `/console`)
-- Trace viewer: per turn node path, spans (tool/llm/retrieval/guard), attempts/backoff, degradations, tokens, cost.
-  Data: `GET /api/traces`, `GET /api/sessions/{id}`.
-- Breaker panel: `GET /api/health`; force open/close `POST /api/admin/breakers/{name}/{open|closed}`.
-- Chaos panel: `POST /api/admin/faults/{dependency}` / `DELETE /api/admin/faults`; dependencies are
-  `llm:<model>`, `tool:catalog|shipping|protection|tickets`, `retrieval:kb`.
-- Tickets list: `GET /api/tickets`. Badcase labelling (store labels in SQLite) feeding the M5 eval set.
-Then M5 (golden/adversarial/chaos eval runner + regression gate), M6 (intern workflow: PRD, practice task cards).
+## Next: M5
+M5 (golden/adversarial/chaos eval runner + regression gate), M6 (intern workflow: PRD, practice task cards).
 Known planted badcase for M6: after "something cheaper", no ANC headphones fit the new budget and the agent only
 says "nothing found" instead of suggesting earbuds.
 

@@ -19,3 +19,18 @@ def mask_pii(text: str) -> str:
         return "[phone]" if len(digits) >= 9 else s
 
     return _PHONE.sub(_phone, text)
+
+
+def mask_obj(obj):
+    """Mask PII in string values of a JSON-like structure.
+
+    Never run mask_pii over serialized JSON: numbers such as float timestamps look like
+    phone numbers and would be replaced unquoted, producing invalid JSON.
+    """
+    if isinstance(obj, str):
+        return mask_pii(obj)
+    if isinstance(obj, dict):
+        return {k: mask_obj(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [mask_obj(v) for v in obj]
+    return obj

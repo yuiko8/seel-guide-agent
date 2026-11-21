@@ -54,9 +54,10 @@ class Gateway:
 
     def call(self, spec: CallSpec, fn: Callable[..., Any], args: dict | None = None, *,
              trace: Trace, deadline: Deadline, idempotency_key: str | None = None,
-             post_validate: Callable[[Any], Any] | None = None) -> Any:
+             post_validate: Callable[[Any], Any] | None = None, span_attrs: dict | None = None) -> Any:
         args = dict(args or {})
-        with trace.span(spec.dependency.split(":")[0] if ":" in spec.dependency else "tool", spec.dependency) as span:
+        with trace.span(spec.dependency.split(":")[0] if ":" in spec.dependency else "tool", spec.dependency,
+                        **(span_attrs or {})) as span:
             # 1. schema validation
             if spec.input_model is not None:
                 try:
