@@ -1,0 +1,40 @@
+{"id":"R01","query":"How many days do I have to return headphones?","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#return-window"]}
+{"id":"R02","query":"who pays return shipping if I'm in Germany","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#return-shipping"]}
+{"id":"R03","query":"can I send back earbuds I already opened","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#non-returnable-items"]}
+{"id":"R04","query":"my speaker stopped working after two months","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#defects-and-warranty"]}
+{"id":"R05","query":"when do I get my money back","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#refund-timing"]}
+{"id":"R06","query":"is the organic tee returnable? it says final sale","filters":{"merchant_id":"maple"},"relevant":["policy:maple#final-sale"]}
+{"id":"R07","query":"can I swap the sweater for a bigger size","filters":{"merchant_id":"maple"},"relevant":["policy:maple#exchanges"]}
+{"id":"R08","query":"return label fee for Australia","filters":{"merchant_id":"maple"},"relevant":["policy:maple#return-shipping"]}
+{"id":"R09","query":"how long is the return window for clothes","filters":{"merchant_id":"maple"},"relevant":["policy:maple#return-window"]}
+{"id":"R10","query":"the mugs arrived broken","filters":{"merchant_id":"kiko"},"relevant":["policy:kiko#damaged-on-arrival"]}
+{"id":"R11","query":"is there a restocking fee on the floor lamp","filters":{"merchant_id":"kiko"},"relevant":["policy:kiko#return-shipping"]}
+{"id":"R12","query":"I lit the candle once, can I still return it","filters":{"merchant_id":"kiko"},"relevant":["policy:kiko#non-returnable-items"]}
+{"id":"R13","query":"Kiko return deadline","filters":null,"relevant":["policy:kiko#return-window"]}
+{"id":"R14","query":"I opened the perfume and don't like it","filters":{"merchant_id":"vela"},"relevant":["policy:vela#opened-products"]}
+{"id":"R15","query":"the serum gave me a rash","filters":{"merchant_id":"vela"},"relevant":["policy:vela#opened-products"]}
+{"id":"R16","query":"refnd timing for skincare","filters":{"merchant_id":"vela"},"relevant":["policy:vela#refund-timing"]}
+{"id":"R17","query":"can I return a tent I used on one trip","filters":{"merchant_id":"trailhead"},"relevant":["policy:trailhead#return-window"]}
+{"id":"R18","query":"warranty on the GPS smartwatch","filters":{"merchant_id":"trailhead"},"relevant":["policy:trailhead#warranty"]}
+{"id":"R19","query":"what does return assurance cover","filters":null,"relevant":["protection#return-assurance"]}
+{"id":"R20","query":"can I add protection after I already ordered","filters":null,"relevant":["protection#return-assurance"]}
+{"id":"R21","query":"my package was stolen from the porch","filters":null,"relevant":["protection#delivery-protection"]}
+{"id":"R22","query":"is a late parcel covered by delivery protection","filters":null,"relevant":["protection#delivery-protection"]}
+{"id":"R23","query":"will my claim definitely be approved","filters":null,"relevant":["protection#claim-outcomes"]}
+{"id":"R24","query":"how much does protection cost","filters":null,"relevant":["protection#pricing"]}
+{"id":"R25","query":"does insurance refund the import duties I paid","filters":null,"relevant":["protection#return-assurance"]}
+{"id":"R26","query":"what does DDP mean","filters":null,"relevant":["faq#what-does-ddp-mean"]}
+{"id":"R27","query":"do I have to pay customs on a gift","filters":null,"relevant":["faq#do-i-pay-duties-on-gifts"]}
+{"id":"R28","query":"my parcel is stuck at customs","filters":null,"relevant":["faq#what-happens-if-my-parcel-is-held-at-customs"]}
+{"id":"R29","query":"can I change the shipping address","filters":null,"relevant":["faq#can-i-change-my-delivery-address-after-ordering"]}
+{"id":"R30","query":"tracking hasn't updated for days","filters":null,"relevant":["faq#how-do-i-track-my-order"]}
+{"id":"R31","query":"how long does delivery to Japan take","filters":null,"relevant":["shipping:JP#overview"]}
+{"id":"R32","query":"will I pay taxes when the parcel arrives in Mexico","filters":null,"relevant":["shipping:MX#overview"]}
+{"id":"R33","query":"can you ship a power bank to Australia","filters":null,"relevant":["shipping:restriction#r1"]}
+{"id":"R34","query":"ship perfume to Brazil","filters":null,"relevant":["shipping:restriction#r2"]}
+{"id":"R35","query":"camping gas stove to Canada","filters":null,"relevant":["shipping:restriction#r3"]}
+{"id":"R36","query":"do you deliver to Russia","filters":null,"relevant":["shipping:RU#unsupported"]}
+{"id":"R37","query":"why is christmas shipping slower","filters":null,"relevant":["shipping:peak#overview"]}
+{"id":"R38","query":"UK VAT on imports","filters":null,"relevant":["shipping:GB#overview"]}
+{"id":"R39","query":"return policy for things bought on final sale","filters":{"doc_type":["policy","protection"]},"relevant":["policy:maple#final-sale","protection#return-assurance"]}
+{"id":"R40","query":"what's not covered by delivery protection","filters":null,"relevant":["protection#delivery-protection"]}

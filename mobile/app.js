@@ -24,6 +24,7 @@ const DEGRADE_COPY = {
   rules_router: "Running in backup mode — answers may be simpler than usual.",
   template_reply: "Running in backup mode — answers may be simpler than usual.",
   deadline: "That took longer than expected.",
+  retrieval_unavailable: "Policy lookup is temporarily unavailable.",
 };
 
 const rid = () => (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random()).replace(/-/g, "").slice(0, 20);
@@ -106,6 +107,20 @@ function addBot(resp) {
       const wrap = el("div", "cards");
       m.items.forEach((it) => wrap.append(card(it)));
       row.append(wrap);
+    }
+    if (m.type === "sources" && m.items.length) {
+      const det = el("details", "sources");
+      det.append(el("summary", null, `Sources (${m.items.length})`));
+      const ol = el("ol");
+      m.items.forEach((x) => {
+        const li = el("li");
+        li.value = x.n;
+        li.append(el("div", "src-title", `${x.title} — ${x.section}`));
+        li.append(el("div", "src-snippet", x.snippet));
+        ol.append(li);
+      });
+      det.append(ol);
+      row.append(det);
     }
     if (m.type === "chips") {
       const wrap = el("div", "chips");

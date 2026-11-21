@@ -1,0 +1,15 @@
+{"id":"H01","query":"I changed my mind about the turntable, can it go back after 3 weeks","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#return-window"]}
+{"id":"H02","query":"does Nordlys replace defective items for free overseas","filters":{"merchant_id":"nordlys"},"relevant":["policy:nordlys#defects-and-warranty"]}
+{"id":"H03","query":"free returns to Canada for the jacket?","filters":{"merchant_id":"maple"},"relevant":["policy:maple#return-shipping"]}
+{"id":"H04","query":"how fast is the refund after I mail the cardigan back","filters":{"merchant_id":"maple"},"relevant":["policy:maple#refund-timing"]}
+{"id":"H05","query":"blanket came with a tear, what do I do","filters":{"merchant_id":"kiko"},"relevant":["policy:kiko#damaged-on-arrival"]}
+{"id":"H06","query":"who covers postage when I return a lamp","filters":{"merchant_id":"kiko"},"relevant":["policy:kiko#return-shipping"]}
+{"id":"H07","query":"unopened cream return period","filters":{"merchant_id":"vela"},"relevant":["policy:vela#return-window"]}
+{"id":"H08","query":"Trailhead headlamp refund how many business days","filters":null,"relevant":["policy:trailhead#refund-timing"]}
+{"id":"H09","query":"can I return something for any reason with the add-on","filters":null,"relevant":["protection#return-assurance"]}
+{"id":"H10","query":"box arrived crushed and item smashed, is that covered","filters":null,"relevant":["protection#delivery-protection"]}
+{"id":"H11","query":"deadline to file a claim for a missing parcel","filters":null,"relevant":["protection#delivery-protection"]}
+{"id":"H12","query":"do I owe anything to the courier in Brazil","filters":null,"relevant":["shipping:BR#overview"]}
+{"id":"H13","query":"express delivery to France","filters":null,"relevant":["shipping:FR#overview"]}
+{"id":"H14","query":"customs seized my order because it was restricted","filters":null,"relevant":["faq#what-happens-if-my-parcel-is-held-at-customs","protection#delivery-protection"]}
+{"id":"H15","query":"can you send skincare to Sao Paulo","filters":null,"relevant":["shipping:restriction#r2"]}

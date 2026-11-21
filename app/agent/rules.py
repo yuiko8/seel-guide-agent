@@ -23,8 +23,12 @@ ORDER_ISSUE = re.compile(r"\b(lost|never (arrived|came)|didn'?t (arrive|come)|ha
                          r"stolen|where is my (order|package|parcel)|my (order|package|parcel)|tracking|refund me|"
                          r"want (a|my) refund|charged twice|wrong item)\b", re.I)
 PROTECTION = re.compile(r"\b(protection|insurance|insure|assurance|protect|coverage|covered|claim)\b", re.I)
-POLICY = re.compile(r"\b(return|returns|returnable|refund|exchange|warranty|final sale|restocking|send (it )?back)\b", re.I)
-SHIPPING = re.compile(r"\b(how long|delivery|deliver|arrive|shipping|ship|customs|duty|duties|tax|taxes|vat|gst|ddp|import)\b", re.I)
+POLICY = re.compile(r"\b(return|returns|returnable|refund|exchange|warranty|final sale|restocking|send (it )?back|mail (it )?back|"
+                    r"go back|postage|money back|defective|stopped working|rash|allergic)\b", re.I)
+MERCHANT_ALIASES = {"nordlys": "nordlys", "maple": "maple", "maple & thread": "maple", "kiko": "kiko", "vela": "vela",
+                    "trailhead": "trailhead"}
+SHIPPING = re.compile(r"\b(how long|delivery|deliver|arrive|shipping|ship|customs|duty|duties|tax|taxes|vat|gst|ddp|import|"
+                      r"track|tracking|address|courier)\b", re.I)
 SHIP_QUESTION = re.compile(r"\b(how long|how much|when will|customs|duty|duties|tax|taxes|vat|gst|ddp|can (you|it|they) ship|"
                            r"do you ship|does it ship|will it arrive)\b|\?", re.I)
 RECOMMEND = re.compile(r"\b(recommend|suggest|looking for|look for|want|need|gift|present|buy|get (her|him|them|me)|budget|"
@@ -119,10 +123,14 @@ def rule_route(text: str, state: SessionState | None = None) -> RouteDecision:
         ref = int(m2.group(1))
 
     has_product_signal = bool(kws or cat or bmax or recipient or modifiers)
-    if ORDER_ISSUE.search(text) and not RECOMMEND.search(text):
+    hypothetical = re.search(r"\b(policy|what does .{1,30} say|what if|what happens if|in case|would|if (it|the|my) )", low)
+    if ORDER_ISSUE.search(text) and not RECOMMEND.search(text) and not hypothetical:
         intent = "order_issue"
     elif PROTECTION.search(text):
         intent = "protection_question"
+    elif hypothetical and ORDER_ISSUE.search(text):
+        has_store = any(re.search(rf"\b{re.escape(a)}\b", low) for a in MERCHANT_ALIASES)
+        intent = "policy_question" if (has_store or kws) else "protection_question"
     elif POLICY.search(text) and not (has_product_signal and RECOMMEND.search(text)):
         intent = "policy_question"
     elif SHIPPING.search(text) and (ref or SHIP_QUESTION.search(text) or not (kws or cat or recipient or bmax)):
@@ -134,13 +142,20 @@ def rule_route(text: str, state: SessionState | None = None) -> RouteDecision:
     else:
         intent = "out_of_scope"
     q = text.strip() if intent in ("policy_question", "shipping_question", "protection_question") else None
+    merchant = next((m for a, m in MERCHANT_ALIASES.items() if re.search(rf"\b{re.escape(a)}\b", low)), None)
     return RouteDecision(intent=intent, slots=slots, referenced_index=ref, modifiers=modifiers, question=q,
-                         injection_suspected=bool(INJECTION.search(text)))
+                         merchant=merchant, injection_suspected=bool(INJECTION.search(text)))
 
 
 # ---------------------------------------------------------------------------
 # Template writer
 # ---------------------------------------------------------------------------
+
+def _first_sentences(text: str, n: int) -> str:
+    text = re.sub(r"^- ", "", text.strip(), flags=re.M).replace("\n", " ")
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    return " ".join(parts[:n]).strip()
+
 
 def _money(v: float) -> str:
     return f"${v:,.2f}"
@@ -204,7 +219,28 @@ def template_respond(plan: dict) -> str:
         if g.get("tax_name") and g.get("tax_rate_pct"):
             head += f", and {g['tax_name']} of {g['tax_rate_pct']}% applies"
         head += "."
+        if g.get("ddp") is True:
+            head += " Duties and taxes are paid at checkout (DDP), so nothing is due on delivery."
+        elif g.get("ddp") is False:
+            head += " DDP isn't available there, so the courier collects duties and taxes from the recipient on delivery."
+        for x in (plan.get("sources") or [])[:1]:
+            if "ddp" in x["id"] and g.get("ddp") is not None:
+                continue  # already explained concretely for this country
+            head += f" {_first_sentences((plan.get('_source_texts') or {}).get(x['n'], ''), 1)} [{x['n']}]"
         return head + ("\n" + "\n".join(lines) if lines else "")
+    if t == "policy_answer":
+        texts = plan.get("_source_texts") or {}
+        srcs = plan.get("sources") or []
+        store = [x for x in srcs if x["id"].startswith("policy:")]
+        rest = [x for x in srcs if not x["id"].startswith("policy:")]
+        ra = next((x for x in rest if x["id"] == "protection#return-assurance"), None)
+        # degrade path shows top-2: retrieval R@1 is not reliable enough to trust a single chunk
+        main = store[:2] if store else rest[:2]
+        head = f"Here's what {plan['merchant']}'s policy says:" if store and plan.get("merchant") else "Here's what I found:"
+        lines = [head] + [f"• {x['section']}: {_first_sentences(texts.get(x['n'], ''), 2)} [{x['n']}]" for x in main]
+        if store and ra:
+            lines.append(f"• If Return Assurance was added at checkout: {_first_sentences(texts.get(ra['n'], ''), 1)} [{ra['n']}]")
+        return "\n".join(lines)
     if t == "smalltalk":
         return "Hi! I can help you find a gift or product, check delivery times and import taxes to your country, and explain return policies. What are you shopping for?"
     if t == "out_of_scope":

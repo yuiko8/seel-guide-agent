@@ -54,6 +54,7 @@ class SessionState(BaseModel):
     summarized_upto_turn: int = 0
     clarify_streak: int = 0
     last_clarify: str | None = None
+    pending: dict | None = None        # question parked while we asked a clarifying question {intent, question}
     last_node: str | None = None
     candidates: list[str] = Field(default_factory=list)        # SKUs shown last
     quotes: dict[str, dict] = Field(default_factory=dict)

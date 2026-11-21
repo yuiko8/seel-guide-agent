@@ -1,0 +1,37 @@
+{
+ "n": 15,
+ "k": 5,
+ "results": {
+  "bm25": {
+   "recall@1": 0.467,
+   "recall@5": 1.0,
+   "mrr": 0.678,
+   "misses": []
+  },
+  "char": {
+   "recall@1": 0.533,
+   "recall@5": 0.933,
+   "mrr": 0.706,
+   "misses": [
+    {
+     "id": "H09",
+     "query": "can I return something for any reason with the add-on",
+     "got": [
+      "policy:trailhead#return-shipping",
+      "policy:nordlys#return-shipping",
+      "policy:maple#return-window"
+     ],
+     "want": [
+      "protection#return-assurance"
+     ]
+    }
+   ]
+  },
+  "hybrid": {
+   "recall@1": 0.467,
+   "recall@5": 1.0,
+   "mrr": 0.7,
+   "misses": []
+  }
+ }
+}

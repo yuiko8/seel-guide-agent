@@ -20,10 +20,12 @@ Open http://localhost:8000 on a phone-sized window (installable PWA). Ops consol
 - `LLM_MODE=claude`: primary `claude-opus-5-5`, fallback `claude-sonnet-5-5`, then rules.
 - `SIM_TODAY=2026-11-21` pins the date (peak-season shipping rules) for reproducible runs.
 
-## Test
+## Test & eval
 
 ```bash
-.venv/bin/python -m pytest -q
+.venv/bin/python -m pytest -q                                   # unit + agent + RAG tests
+.venv/bin/python -m evals.retrieval_eval                         # Recall@k / MRR, BM25 vs char vs hybrid
+.venv/bin/python -m evals.retrieval_eval --set retrieval_holdout # held-out set: acceptance only, never tune on it
 ```
 
 ## Layout
@@ -33,6 +35,8 @@ app/harness/   errors, deadline, retry, circuit_breaker, gateway, faults, state,
 app/agent/     graph (state machine), llm_chain (model fallback), rules (router/template = degrade path), prompts, schemas
 app/llm/       Claude client, MockLLM
 app/tools/     catalog search, restrictions, shipping & landed cost
+app/rag/       chunker (stable chunk ids), hybrid retriever (BM25 + char n-gram, RRF, filters, confidence floor)
+evals/         retrieval datasets (dev + holdout) and eval runner; reports/ holds results
 app/api.py     FastAPI: /api/chat, /api/health, /api/sessions/{id}, /api/traces, /api/admin/faults
 mobile/        PWA (no build step)
 data/          simulated catalog, merchant policies, cross-border rules, protection terms

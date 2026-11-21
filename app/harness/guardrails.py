@@ -86,3 +86,35 @@ def numbers_in(obj) -> list[float]:
         for v in obj:
             out.extend(numbers_in(v))
     return out
+
+
+# ---------------------------------------------------------------------------
+# Grounding check for answers built from retrieved sources (policy / protection / FAQ)
+# ---------------------------------------------------------------------------
+CITE_RE = re.compile(r"\[(?:source:)?(\d{1,2})\]")
+CLAIM_NUM_RE = re.compile(r"(\$\s?\d+(?:\.\d{1,2})?|\d+(?:\.\d+)?\s?(?:%|percent|days?|hours?|business days|years?|months?|weeks?|kg))", re.I)
+
+
+def normalize_citations(text: str) -> str:
+    return CITE_RE.sub(lambda m: f"[{m.group(1)}]", text)
+
+
+def check_grounding(text: str, sources: dict[int, str]) -> GuardResult:
+    """sources: citation number -> source text.
+    - uncited_answer   : a sourced answer with no [n] markers
+    - bad_citation     : [n] that doesn't exist
+    - ungrounded_claim : a number+unit ("45 days", "$12", "20%") that appears in no source text
+    """
+    v = []
+    cites = {int(n) for n in CITE_RE.findall(text)}
+    if not cites:
+        v.append({"type": "uncited_answer"})
+    for n in sorted(cites - set(sources)):
+        v.append({"type": "bad_citation", "value": f"[{n}]"})
+    corpus = " ".join(sources.values()).lower()
+    corpus_nums = set(re.findall(r"\d+(?:\.\d+)?", corpus))
+    for m in CLAIM_NUM_RE.finditer(text):
+        num = re.search(r"\d+(?:\.\d+)?", m.group(0)).group(0)
+        if num not in corpus_nums:
+            v.append({"type": "ungrounded_claim", "value": m.group(0)})
+    return GuardResult(ok=not v, violations=v)

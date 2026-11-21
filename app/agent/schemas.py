@@ -23,6 +23,7 @@ class RouteDecision(BaseModel):
     referenced_index: int | None = None     # "the second one" -> 2 (1-based, refers to last shown list)
     modifiers: list[Literal["cheaper", "more_premium", "different"]] = Field(default_factory=list)
     question: str | None = None             # standalone rewrite of a policy/shipping question
+    merchant: str | None = None             # store named by the shopper, if any
     injection_suspected: bool = False
 
 
@@ -51,8 +52,9 @@ ROUTE_JSON_SCHEMA = {
         "referenced_index": _nullable("integer"),
         "modifiers": {"type": "array", "items": {"type": "string", "enum": ["cheaper", "more_premium", "different"]}},
         "question": _nullable("string"),
+        "merchant": _nullable("string"),
         "injection_suspected": {"type": "boolean"},
     },
-    "required": ["intent", "slots", "referenced_index", "modifiers", "question", "injection_suspected"],
+    "required": ["intent", "slots", "referenced_index", "modifiers", "question", "merchant", "injection_suspected"],
     "additionalProperties": False,
 }

@@ -13,6 +13,7 @@ degraded reply, so the shopper always gets a coherent answer and the trace says 
 from __future__ import annotations
 
 import json
+import re
 import time
 import uuid
 from dataclasses import dataclass, field
@@ -25,18 +26,19 @@ from ..harness.deadline import Deadline
 from ..harness.errors import CircuitOpen, DeadlineExceeded, HarnessError
 from ..harness.faults import FaultInjector
 from ..harness.gateway import CallSpec, Gateway
-from ..harness.guardrails import check_input, check_output, numbers_in
+from ..harness.guardrails import check_grounding, check_input, check_output, normalize_citations, numbers_in
 from ..harness.retry import RetryPolicy
 from ..harness.state import ConcurrentModification, Message, SessionState, SessionStore
 from ..harness.tracing import Trace, write_jsonl
 from ..llm.base import LLMClient
+from ..rag.retriever import HybridRetriever, default_retriever
 from ..tools import commerce, kb
 from . import prompts
 from .llm_chain import AllModelsFailed, LLMChain
 from .rules import rule_route, template_respond
 from .schemas import ROUTE_JSON_SCHEMA, RouteDecision
 
-DETERMINISTIC_PLANS = {"clarify", "smalltalk", "out_of_scope", "injection", "unsupported_yet", "degraded"}
+DETERMINISTIC_PLANS = {"clarify", "smalltalk", "out_of_scope", "injection", "unsupported_yet", "degraded", "no_answer"}
 
 
 @dataclass
@@ -51,14 +53,16 @@ class Turn:
     facts: list[Fact] = field(default_factory=list)
     cards: list[dict] = field(default_factory=list)
     chips: list[str] = field(default_factory=list)
+    sources: list[dict] = field(default_factory=list)   # numbered, citable retrieved chunks
     reply: str = ""
 
 
 class Agent:
     def __init__(self, settings: Settings, llms: list[LLMClient], store: SessionStore | None = None,
                  faults: FaultInjector | None = None, breakers: BreakerRegistry | None = None,
-                 context: ContextManager | None = None):
+                 context: ContextManager | None = None, retriever: HybridRetriever | None = None):
         self.s = settings
+        self.retriever = retriever or default_retriever()
         self.store = store or SessionStore(settings.db_path)
         self.breakers = breakers or BreakerRegistry(
             BreakerConfig(window=20, min_calls=5, error_rate_threshold=0.5, consecutive_failures=4, open_seconds=20),
@@ -70,6 +74,7 @@ class Agent:
         self.nodes = {
             "intake": self.n_intake, "route": self.n_route, "clarify": self.n_clarify,
             "recommend": self.n_recommend, "shipping_qa": self.n_shipping_qa, "static": self.n_static,
+            "policy_qa": self.n_policy_qa,
             "respond": self.n_respond,
         }
         self.tool_spec = lambda name, model=None: CallSpec(
@@ -141,6 +146,16 @@ class Agent:
         out_msgs = [{"type": "text", "text": t.reply}]
         if t.cards:
             out_msgs.append({"type": "product_cards", "items": t.cards})
+        if t.sources and re.search(r"\[\d+\]", t.reply):
+            # Renumber cited sources 1..n in order of first appearance; drop uncited ones.
+            by_n = {src["n"]: src for src in t.sources}
+            order = list(dict.fromkeys(int(n) for n in re.findall(r"\[(\d+)\]", t.reply) if int(n) in by_n))
+            remap = {old: i for i, old in enumerate(order, 1)}
+            t.reply = re.sub(r"\[(\d+)\]", lambda m: f"[{remap[int(m.group(1))]}]" if int(m.group(1)) in remap else "", t.reply)
+            out_msgs[0]["text"] = t.reply
+            st.messages[-1].content = t.reply
+            out_msgs.append({"type": "sources", "items": [
+                {**{k: by_n[o][k] for k in ("id", "title", "section", "snippet")}, "n": remap[o]} for o in order]})
         if t.chips:
             out_msgs.append({"type": "chips", "options": t.chips})
         return {
@@ -195,6 +210,14 @@ class Agent:
             t.plan = {"type": "injection"}
             return "respond"
         prev_clarify, st.last_clarify = st.last_clarify, None
+        pending, st.pending = st.pending, None
+        if pending and prev_clarify and self._answers_clarify(prev_clarify, decision, t.user_message):
+            # The shopper answered our clarifying question: resume the parked question instead of starting over.
+            t.trace.event("node", "resume_pending", pending=pending, answered=prev_clarify)
+            decision.intent = pending["intent"]
+            decision.question = pending["question"]
+            if prev_clarify == "merchant" and not decision.merchant:
+                decision.merchant = self._merchant_from_text(t.user_message)
         changed = self._merge_slots(t, decision)
         t.trace.event("state", "slots", changed=changed, slots=st.slots.filled())
         if prev_clarify and decision.intent in ("out_of_scope", "smalltalk"):
@@ -205,8 +228,25 @@ class Agent:
             return self._needs_clarify(t, prev_clarify) or "recommend"
         if decision.intent == "shipping_question":
             return "shipping_qa"
+        if decision.intent in ("policy_question", "protection_question"):
+            return "policy_qa"
         st.clarify_streak = 0
         return "static"
+
+    @staticmethod
+    def _merchant_from_text(text: str) -> str | None:
+        low = text.lower()
+        for mid, m in kb.merchants().items():
+            if mid in low or m["name"].lower() in low:
+                return m["name"]
+        return None
+
+    def _answers_clarify(self, slot: str, d: RouteDecision, text: str) -> bool:
+        if slot == "merchant":
+            return bool(d.merchant or self._merchant_from_text(text))
+        if slot == "country":
+            return bool(d.slots.country) and d.intent not in ("recommend",) or (bool(d.slots.country) and len(text.split()) <= 4)
+        return False
 
     def _merge_slots(self, t: Turn, d: RouteDecision) -> list[str]:
         st, u, changed = t.state, d.slots, []
@@ -277,8 +317,6 @@ class Agent:
             t.plan = {"type": intent}
         else:
             msg = {
-                "policy_question": "I can't look up return policies just yet — that's coming soon. Our support team can answer this for you right away.",
-                "protection_question": "Purchase protection quotes are coming soon. In the meantime our support team can tell you what's covered.",
                 "order_issue": "I'm sorry about the trouble with your order. I'm connecting you with our support team, who can look into it.",
             }.get(intent)
             t.plan = {"type": "unsupported_yet", "message": msg}
@@ -344,6 +382,7 @@ class Agent:
             t.chips = ["United States", "United Kingdom", "Germany", "Canada", "Australia", "Japan"]
             st.clarify_streak += 1
             st.last_clarify = "country"
+            st.pending = {"intent": "shipping_question", "question": d.question if d and d.question else t.user_message}
             return "respond"
         country = s.country
         rules = kb.shipping_rules()
@@ -372,8 +411,108 @@ class Agent:
                    "tax_rate_pct": round(c.get("tax_rate", 0) * 100), "duty_free_threshold_usd": c.get("duty_free_threshold_usd"),
                    "ddp": c.get("ddp_available")}
         t.facts.append(Fact("shipping_rules", country, general, 2))
+        q = d.question if d and d.question else t.user_message
+        if re.search(r"ddp|customs|gift|address|track|held|seiz|restrict|peak|christmas|holiday", q, re.I):
+            hits = self._retrieve(t, q, {"doc_type": ["faq", "shipping", "restriction"]}, k=2)
+            if hits:
+                self._add_sources(t, hits, priority=2.6)
         t.plan = {"type": "shipping_answer", "country": country, "items": items, "general": general,
-                  "question": d.question if d else t.user_message}
+                  "question": q, "sources": [{"n": x["n"], "id": x["id"], "title": x["title"], "section": x["section"]} for x in t.sources],
+                  "_source_texts": {x["n"]: x["text"] for x in t.sources}}
+        return "respond"
+
+    # ---------------- retrieval ----------------
+    def _retrieve(self, t: Turn, query: str, filters: dict | None, k: int = 4) -> list | None:
+        """Returns hits, [] when nothing relevant, or None when retrieval is unavailable."""
+        spec = CallSpec(dependency="retrieval:kb", timeout_s=1.5, idempotent=True,
+                        retry=RetryPolicy(max_attempts=2, base_delay_s=0.05, max_delay_s=0.2))
+        try:
+            # Scoped to one merchant's ~5 chunks, a weak lexical match is still meaningful: lower the floor.
+            floor = 0.3 if filters and "merchant_id" in filters else 1.0
+            res = self.gateway.call(spec, lambda query, filters, k: self.retriever.search(query, k=k, filters=filters, min_bm25=floor),
+                                    {"query": query, "filters": filters, "k": k}, trace=t.trace, deadline=t.deadline)
+        except HarnessError as e:
+            t.trace.degrade("retrieval_unavailable", e.kind)
+            return None
+        t.trace.event("retrieval", "hits", query=query[:200], filters=filters,
+                      hits=[{"id": h.chunk.id, "bm25": h.bm25, "char": h.char} for h in res["hits"]])
+        return res["hits"]
+
+    def _add_sources(self, t: Turn, hits: list, priority: float = 4.0) -> None:
+        for h in hits:
+            if any(src["id"] == h.chunk.id for src in t.sources):
+                continue
+            n = len(t.sources) + 1
+            c = h.chunk
+            text = c.text.replace("**", "")
+            t.sources.append({"n": n, "id": c.id, "title": c.doc_title, "section": c.section, "text": text,
+                              "snippet": text[:220] + ("…" if len(text) > 220 else "")})
+            t.facts.append(Fact("source", str(n), {"title": c.doc_title, "section": c.section, "text": text},
+                                priority - 0.1 * n))
+
+    def _scope_item(self, t: Turn) -> dict | None:
+        st, d = t.state, t.route
+        if d and d.referenced_index and st.candidates:
+            i = d.referenced_index
+            idx = len(st.candidates) - 1 if i == -1 else i - 1
+            if 0 <= idx < len(st.candidates):
+                return kb.catalog_by_sku()[st.candidates[idx]]
+        return None
+
+    def n_policy_qa(self, t: Turn) -> str:
+        st, d = t.state, t.route
+        st.clarify_streak = 0
+        question = (d.question if d and d.question else t.user_message)
+        item = self._scope_item(t)
+        merchant_id = None
+        if d and d.merchant:
+            merchant_id = next((mid for mid, m in kb.merchants().items()
+                                if d.merchant.lower() in (mid, m["name"].lower()) or m["name"].lower().startswith(d.merchant.lower())), None)
+        if not merchant_id and item:
+            merchant_id = item["merchant_id"]
+        if not merchant_id and st.candidates:
+            mids = {kb.catalog_by_sku()[s]["merchant_id"] for s in st.candidates if s in kb.catalog_by_sku()}
+            if len(mids) == 1:
+                merchant_id = mids.pop()
+        query = question + (f" {item['subcategory']} {item['title']}" if item else "")
+
+        if d and d.intent == "protection_question":
+            hits = self._retrieve(t, query, {"doc_type": ["protection", "faq"]}, k=3)
+        else:
+            if not merchant_id:
+                names = [m["name"] for m in kb.merchants().values()]
+                if st.candidates:
+                    names = list(dict.fromkeys(kb.merchants()[kb.catalog_by_sku()[s]["merchant_id"]]["name"]
+                                               for s in st.candidates if s in kb.catalog_by_sku()))
+                t.plan = {"type": "clarify", "missing": "merchant",
+                          "question": "Return rules differ by store. Which store is it from?"}
+                t.chips = names
+                st.clarify_streak += 1
+                st.last_clarify = "merchant"
+                st.pending = {"intent": d.intent if d else "policy_question", "question": question}
+                return "respond"
+            hits = self._retrieve(t, query, {"merchant_id": merchant_id}, k=3)
+            if hits is not None:
+                # Seel-style hook: where the store says no, Return Assurance may be the answer (if bought at checkout).
+                extra = self._retrieve(t, query, {"doc_type": ["protection"]}, k=1)
+                if extra and hits and any(re.search(r"cannot|can't|not be returned|non-returnable|final sale", h.chunk.text, re.I)
+                                          for h in hits[:2]):
+                    hits = hits + extra
+        if hits is None:
+            t.plan = {"type": "degraded", "message": "I can't look up the policy details right now, and I don't want to "
+                                                     "guess. Please try again in a minute, or I can connect you with support."}
+            return "respond"
+        if not hits:
+            store = kb.merchants()[merchant_id]["name"] if merchant_id else "our"
+            t.plan = {"type": "no_answer", "message": f"I couldn't find anything about that in {store} policies. "
+                                                      "I can connect you with our support team if you'd like."}
+            return "respond"
+        self._add_sources(t, hits)
+        t.plan = {"type": "policy_answer", "question": question,
+                  "merchant": kb.merchants()[merchant_id]["name"] if merchant_id else None,
+                  "item": item["title"] if item else None,
+                  "sources": [{"n": src["n"], "id": src["id"], "title": src["title"], "section": src["section"]} for src in t.sources],
+                  "_source_texts": {src["n"]: src["text"] for src in t.sources}}
         return "respond"
 
     def n_respond(self, t: Turn) -> str:
@@ -382,7 +521,9 @@ class Agent:
             t.reply = template_respond(plan)
             t.trace.event("respond", "template", plan=plan["type"])
             return "finalize"
-        allowed = numbers_in(plan) + numbers_in(t.state.slots.model_dump())
+        allowed = numbers_in({k: v for k, v in plan.items() if k != "_source_texts"}) + numbers_in(t.state.slots.model_dump())
+        for txt in (plan.get("_source_texts") or {}).values():
+            allowed += [float(x) for x in re.findall(r"\$(\d+(?:\.\d{1,2})?)", txt)]
         for p in plan.get("products", []) + plan.get("items", []):
             sh = p.get("shipping") or {}
             allowed.append((sh.get("tax_usd") or 0) + (sh.get("duty_usd") or 0))
@@ -398,7 +539,12 @@ class Agent:
                 t.trace.degrade("template_reply", str(e)[:200])
                 t.reply = template_respond(plan)
                 return "finalize"
+            text = normalize_citations(text)
             g = check_output(text, allowed)
+            if plan.get("_source_texts") and plan["type"] == "policy_answer":
+                gg = check_grounding(text, plan["_source_texts"])
+                g.violations += gg.violations
+                g.ok = g.ok and gg.ok
             t.trace.event("guard", "output", status="ok" if g.ok else "blocked", attempt=attempt, violations=g.violations)
             if g.ok:
                 t.reply = text.strip()
@@ -426,7 +572,7 @@ class Agent:
 
 def _plan_for_llm(plan: dict) -> dict:
     """The LLM gets the plan's intent and constraints; detailed numbers are in FACTS."""
-    p = {k: v for k, v in plan.items() if k not in ("products", "items")}
+    p = {k: v for k, v in plan.items() if k not in ("products", "items") and not k.startswith("_")}
     if "products" in plan:
         p["products"] = [{"title": x["title"], "position": i} for i, x in enumerate(plan["products"], 1)]
     if "items" in plan:
@@ -434,6 +580,7 @@ def _plan_for_llm(plan: dict) -> dict:
     p["instructions"] = {
         "recommend": "Introduce the picks in 1 short sentence each (why it fits). Mention delivery window and estimated landed total from FACTS. If shipping_unavailable is true, say delivery/tax info is temporarily unavailable. End with one helpful question.",
         "no_results": "Explain briefly why nothing matched (using excluded counts / restrictions) and suggest one concrete change.",
-        "shipping_answer": "Answer the shipping/tax question for the destination using FACTS. If an item cannot ship, say why and suggest an alternative approach.",
+        "shipping_answer": "Answer the shipping/tax question for the destination using FACTS. If an item cannot ship, say why and suggest an alternative approach. If numbered sources are provided and you use them, cite them like [1].",
+        "policy_answer": "Answer the question directly in 2-4 sentences using only the numbered sources, citing each statement like [1]. If the sources don't cover it, say so.",
     }.get(plan["type"], "Answer helpfully and briefly.")
     return p
