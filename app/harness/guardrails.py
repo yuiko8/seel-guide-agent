@@ -54,7 +54,11 @@ def allowed_amounts(facts_numbers: list[float]) -> set[float]:
         if v is None:
             continue
         v = float(v)
-        allowed.update({round(v, 2), float(round(v)), float(int(v))})
+        allowed.add(round(v, 2))
+        if v >= 10:
+            # "about $146" for 146.36 is fine; but small facts (ratings, day counts) must not
+            # license "$4" or "$5" via rounding.
+            allowed.update({float(round(v)), float(int(v))})
     return allowed
 
 

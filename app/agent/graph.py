@@ -63,15 +63,19 @@ class Turn:
 class Agent:
     def __init__(self, settings: Settings, llms: list[LLMClient], store: SessionStore | None = None,
                  faults: FaultInjector | None = None, breakers: BreakerRegistry | None = None,
-                 context: ContextManager | None = None, retriever: HybridRetriever | None = None):
+                 context: ContextManager | None = None, retriever: HybridRetriever | None = None,
+                 clock=time.monotonic, sleep=time.sleep):
+        # clock/sleep are injectable so chaos evals can run in virtual time (deterministic breaker
+        # cool-downs and retry backoff without real waiting).
         self.s = settings
         self.retriever = retriever or default_retriever()
         self.store = store or SessionStore(settings.db_path)
         self.breakers = breakers or BreakerRegistry(
             BreakerConfig(window=20, min_calls=5, error_rate_threshold=0.5, consecutive_failures=4, open_seconds=20),
             overrides={f"llm:{c.model}": BreakerConfig(window=10, min_calls=3, error_rate_threshold=0.5,
-                                                       consecutive_failures=3, open_seconds=30) for c in llms})
-        self.gateway = Gateway(self.breakers, faults=faults, idem=self.store)
+                                                       consecutive_failures=3, open_seconds=30) for c in llms},
+            clock=clock)
+        self.gateway = Gateway(self.breakers, faults=faults, idem=self.store, sleep=sleep)
         self.chain = LLMChain(llms, self.gateway, timeout_s=settings.llm_timeout_s)
         self.ctx = context or ContextManager()
         self.tickets = TicketService(self.store._conn, self.store._lock)

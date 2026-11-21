@@ -144,6 +144,8 @@ def _corrupt(result: Any) -> Any:
     if hasattr(result, "text"):
         try:
             result.text = result.text[: max(1, len(result.text) // 3)] + "<<truncated garbage"
+            if hasattr(result, "stop_reason"):
+                result.stop_reason = "max_tokens"   # what a real cut-off completion reports
         except Exception:
             pass
     return result

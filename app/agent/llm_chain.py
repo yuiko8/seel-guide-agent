@@ -37,6 +37,9 @@ class LLMChain:
             for repair in range(2):
                 def validate(resp: LLMResponse):
                     trace.add_usage(resp.input_tokens, resp.output_tokens, resp.cost_usd, model=client.model)
+                    if resp.stop_reason == "max_tokens":
+                        # A cut-off draft is not a shorter answer: it can end mid-number ("total $4").
+                        raise MalformedOutput(f"{task}: output truncated (max_tokens)", dependency=spec.dependency)
                     if parse is None:
                         return resp, resp.text
                     try:

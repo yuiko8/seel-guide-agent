@@ -241,3 +241,26 @@ def test_input_guard_flags_injection():
 def test_pii_masking():
     s = mask_pii("email me at jane.doe@example.com or +1 (415) 555-0199, card 4111 1111 1111 1111, price $149.99")
     assert "[email]" in s and "[phone]" in s and "[card]" in s and "$149.99" in s
+
+
+# ---- M5 findings ---------------------------------------------------------------------------
+def test_truncated_llm_output_is_not_shown_to_the_shopper():
+    """Chaos eval finding: a cut-off draft ("Estimated total $4<<...") used to pass the output guard."""
+    from app.agent.graph import Agent
+    from app.config import Settings
+    from app.harness.faults import Fault, FaultInjector
+    from app.harness.state import SessionStore
+    from app.llm.mock import MockLLM
+
+    s = Settings(llm_mode="mock", db_path=":memory:", trace_jsonl="/dev/null", sim_today="2026-11-21")
+    agent = Agent(s, [MockLLM()], store=SessionStore(":memory:"), faults=FaultInjector({"llm:*": Fault(malformed_rate=1.0)}))
+    r = agent.handle("final sale tee to Germany")
+    text = r["messages"][0]["text"]
+    assert "<<truncated" not in text and "template_reply" in r["degraded"]
+
+
+def test_guard_does_not_license_small_amounts_by_rounding():
+    from app.harness.guardrails import check_output
+    assert check_output("about $146 in total", [146.36, 4.7]).ok          # rounding a price is fine
+    assert not check_output("Estimated total $4", [146.36, 4.7]).ok      # a 4.7 rating is not $4
+    assert not check_output("only $5 more", [4.7]).ok

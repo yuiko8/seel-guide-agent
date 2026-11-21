@@ -1,0 +1,53 @@
+name: ci
+on:
+  push:
+    branches: [main, "claude/**"]
+  pull_request:
+
+jobs:
+  test-and-gate:
+    runs-on: ubuntu-latest
+    env:
+      LLM_MODE: mock          # CI must stay deterministic; real-model evals run manually (make eval-claude)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install fastapi uvicorn pydantic anthropic rank-bm25 pytest httpx
+      - name: Unit tests
+        run: python -m pytest -q
+      - name: Retrieval eval (dev set)
+        run: python -m evals.retrieval_eval
+      - name: Conversation eval + regression gate
+        run: python -m evals.run --gate --quiet
+      - name: Eval summary
+        if: always()
+        run: cat evals/reports/conv-mock-latest.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-report
+          path: evals/reports/conv-mock-*
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install fastapi uvicorn pydantic anthropic rank-bm25
+      - run: npm install --no-save playwright@1.63.0 && npx playwright install --with-deps chromium
+      - name: PWA + console E2E (iPhone 13)
+        run: node e2e/app.e2e.js
+        env:
+          E2E_SHOTS: e2e-shots
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: e2e-screenshots
+          path: e2e-shots

@@ -15,7 +15,7 @@ These terms describe two simulated add-on protections offered at checkout in thi
 - **Not covered:** delays alone (unless the parcel is over 20 days past the latest estimated date, then it is treated as lost), wrong address entered by the shopper, items seized by customs because they are restricted at the destination.
 
 ## Claim outcomes
-Every claim is reviewed. **Approval is not guaranteed** until the review is complete; the assistant must never promise that a claim will be approved or that a refund will be issued.
+Every claim is reviewed. **Approval is not guaranteed** until the review is complete, and no outcome (refund, reshipment or rejection) is decided before then.
 
 ## Pricing
 The price of protection is calculated per order from the item category, price, destination and season. Typical prices are 1%–6% of the item price, minimum $0.99.

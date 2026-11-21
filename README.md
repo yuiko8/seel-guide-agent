@@ -26,7 +26,12 @@ Open http://localhost:8000 on a phone-sized window (installable PWA). Ops consol
 .venv/bin/python -m pytest -q                                   # unit + agent + RAG tests
 .venv/bin/python -m evals.retrieval_eval                         # Recall@k / MRR, BM25 vs char vs hybrid
 .venv/bin/python -m evals.retrieval_eval --set retrieval_holdout # held-out set: acceptance only, never tune on it
+make eval        # conversation eval: golden + adversarial, chaos (7 fault profiles), red-team liar responder
+make gate        # same + regression gate vs evals/baseline.json (what CI runs)
+make e2e         # PWA + ops console E2E at iPhone 13 size (Playwright, starts its own server)
 ```
+
+Results and the known-failure backlog: `docs/reports/M5-evals.md`; latest run: `evals/reports/conv-mock-latest.md`.
 
 ## Layout
 
@@ -36,7 +41,9 @@ app/agent/     graph (state machine), llm_chain (model fallback), rules (router/
 app/llm/       Claude client, MockLLM
 app/tools/     catalog search, restrictions, shipping & landed cost
 app/rag/       chunker (stable chunk ids), hybrid retriever (BM25 + char n-gram, RRF, filters, confidence floor)
-evals/         retrieval datasets (dev + holdout) and eval runner; reports/ holds results
+evals/         retrieval eval; conversation eval (run.py, checks.py, judge.py), datasets/, baseline.json, reports/
+e2e/           Playwright E2E for the PWA and console
+console/       ops console (traces, breakers & chaos, tickets, badcase labels)
 app/api.py     FastAPI: /api/chat, /api/health, /api/sessions/{id}, /api/traces, /api/admin/faults
 mobile/        PWA (no build step)
 data/          simulated catalog, merchant policies, cross-border rules, protection terms

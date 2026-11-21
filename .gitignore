@@ -6,3 +6,4 @@ var/
 var.log
 *.bundle
 *.tar.gz
+evals/reports/conv-*-2*.json
