@@ -1,0 +1,213 @@
+{
+ "_note": "SIMULATED cross-border rules for a sandbox. Not real customs guidance.",
+ "origin": "US",
+ "countries": {
+  "US": {
+   "name": "United States",
+   "standard_days": [
+    3,
+    6
+   ],
+   "express_days": [
+    1,
+    3
+   ],
+   "duty_free_threshold_usd": 0,
+   "tax_rate": 0.0,
+   "tax_name": "sales tax (merchant collected)",
+   "ddp_available": true,
+   "peak_delay_risk": "low"
+  },
+  "CA": {
+   "name": "Canada",
+   "standard_days": [
+    6,
+    12
+   ],
+   "express_days": [
+    3,
+    5
+   ],
+   "duty_free_threshold_usd": 110,
+   "tax_rate": 0.05,
+   "tax_name": "GST",
+   "ddp_available": true,
+   "peak_delay_risk": "medium"
+  },
+  "GB": {
+   "name": "United Kingdom",
+   "standard_days": [
+    7,
+    12
+   ],
+   "express_days": [
+    3,
+    5
+   ],
+   "duty_free_threshold_usd": 170,
+   "tax_rate": 0.2,
+   "tax_name": "VAT",
+   "ddp_available": true,
+   "peak_delay_risk": "medium"
+  },
+  "DE": {
+   "name": "Germany",
+   "standard_days": [
+    7,
+    14
+   ],
+   "express_days": [
+    3,
+    6
+   ],
+   "duty_free_threshold_usd": 160,
+   "tax_rate": 0.19,
+   "tax_name": "VAT",
+   "ddp_available": true,
+   "peak_delay_risk": "medium"
+  },
+  "FR": {
+   "name": "France",
+   "standard_days": [
+    7,
+    14
+   ],
+   "express_days": [
+    3,
+    6
+   ],
+   "duty_free_threshold_usd": 160,
+   "tax_rate": 0.2,
+   "tax_name": "VAT",
+   "ddp_available": true,
+   "peak_delay_risk": "medium"
+  },
+  "AU": {
+   "name": "Australia",
+   "standard_days": [
+    8,
+    16
+   ],
+   "express_days": [
+    4,
+    7
+   ],
+   "duty_free_threshold_usd": 650,
+   "tax_rate": 0.1,
+   "tax_name": "GST",
+   "ddp_available": true,
+   "peak_delay_risk": "high"
+  },
+  "JP": {
+   "name": "Japan",
+   "standard_days": [
+    6,
+    12
+   ],
+   "express_days": [
+    3,
+    5
+   ],
+   "duty_free_threshold_usd": 65,
+   "tax_rate": 0.1,
+   "tax_name": "consumption tax",
+   "ddp_available": true,
+   "peak_delay_risk": "medium"
+  },
+  "BR": {
+   "name": "Brazil",
+   "standard_days": [
+    15,
+    35
+   ],
+   "express_days": [
+    7,
+    12
+   ],
+   "duty_free_threshold_usd": 0,
+   "tax_rate": 0.6,
+   "tax_name": "import tax",
+   "ddp_available": false,
+   "peak_delay_risk": "high"
+  },
+  "MX": {
+   "name": "Mexico",
+   "standard_days": [
+    8,
+    18
+   ],
+   "express_days": [
+    4,
+    7
+   ],
+   "duty_free_threshold_usd": 50,
+   "tax_rate": 0.16,
+   "tax_name": "IVA",
+   "ddp_available": false,
+   "peak_delay_risk": "high"
+  }
+ },
+ "duty_rates_by_category": {
+  "electronics": 0.0,
+  "apparel": 0.12,
+  "home": 0.05,
+  "beauty": 0.04,
+  "outdoor": 0.06
+ },
+ "unsupported_destinations": {
+  "RU": "Our carriers have suspended service to Russia; orders cannot be shipped there.",
+  "KP": "Shipping to North Korea is prohibited.",
+  "IR": "Shipping to Iran is prohibited."
+ },
+ "restrictions": [
+  {
+   "id": "R1",
+   "match": {
+    "battery": "standalone"
+   },
+   "countries": [
+    "AU",
+    "JP",
+    "BR"
+   ],
+   "rule": "Standalone lithium batteries (power banks, battery packs) cannot be shipped by air to this destination."
+  },
+  {
+   "id": "R2",
+   "match": {
+    "liquid": true
+   },
+   "countries": [
+    "BR"
+   ],
+   "rule": "Liquid cosmetics and fragrances cannot be imported to this destination by consumer parcel."
+  },
+  {
+   "id": "R3",
+   "match": {
+    "subcategory": "stove"
+   },
+   "countries": [
+    "AU",
+    "JP",
+    "GB",
+    "DE",
+    "FR",
+    "CA",
+    "BR",
+    "MX"
+   ],
+   "rule": "Gas appliances are restricted for international parcels; ships to the US only."
+  }
+ ],
+ "peak_season": {
+  "months": [
+   11,
+   12
+  ],
+  "extra_days": [
+   2,
+   5
+  ]
+ }
+}

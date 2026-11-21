@@ -1,0 +1,8468 @@
+[
+ {
+  "sku": "NOR-001",
+  "merchant_id": "nordlys",
+  "title": "Drift Wireless ANC Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 247.99,
+  "weight_kg": 0.33,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "travel"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 0,
+  "rating": 3.5,
+  "reviews": 1715
+ },
+ {
+  "sku": "NOR-002",
+  "merchant_id": "nordlys",
+  "title": "Ember Noise-Cancelling Over-Ear Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 85.99,
+  "weight_kg": 0.37,
+  "tags": [
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 256
+ },
+ {
+  "sku": "NOR-003",
+  "merchant_id": "nordlys",
+  "title": "Willow Noise-Cancelling Over-Ear Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 342.99,
+  "weight_kg": 0.38,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "travel"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 743
+ },
+ {
+  "sku": "NOR-004",
+  "merchant_id": "nordlys",
+  "title": "Solace Noise-Cancelling Over-Ear Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 166.99,
+  "weight_kg": 0.26,
+  "tags": [
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.4,
+  "reviews": 1754
+ },
+ {
+  "sku": "NOR-005",
+  "merchant_id": "nordlys",
+  "title": "Lumen Wireless ANC Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 228.99,
+  "weight_kg": 0.29,
+  "tags": [
+   "noise-cancelling",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 2030
+ },
+ {
+  "sku": "NOR-006",
+  "merchant_id": "nordlys",
+  "title": "Lumen Wireless ANC Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 142.99,
+  "weight_kg": 0.27,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "travel",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.5,
+  "reviews": 320
+ },
+ {
+  "sku": "NOR-007",
+  "merchant_id": "nordlys",
+  "title": "Onyx Wireless ANC Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 157.99,
+  "weight_kg": 0.32,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "travel",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.4,
+  "reviews": 251
+ },
+ {
+  "sku": "NOR-008",
+  "merchant_id": "nordlys",
+  "title": "Juniper Wireless ANC Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 141.99,
+  "weight_kg": 0.35,
+  "tags": [
+   "travel"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.7,
+  "reviews": 482
+ },
+ {
+  "sku": "NOR-009",
+  "merchant_id": "nordlys",
+  "title": "Summit Noise-Cancelling Over-Ear Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 122.99,
+  "weight_kg": 0.36,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "travel",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.0,
+  "reviews": 1141
+ },
+ {
+  "sku": "NOR-010",
+  "merchant_id": "nordlys",
+  "title": "Drift Wireless ANC Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 309.99,
+  "weight_kg": 0.31,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "travel"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.7,
+  "reviews": 953
+ },
+ {
+  "sku": "NOR-011",
+  "merchant_id": "nordlys",
+  "title": "Nimbus Noise-Cancelling Over-Ear Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 199.99,
+  "weight_kg": 0.29,
+  "tags": [
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.2,
+  "reviews": 2322
+ },
+ {
+  "sku": "NOR-012",
+  "merchant_id": "nordlys",
+  "title": "Lumen Noise-Cancelling Over-Ear Headphones",
+  "category": "electronics",
+  "subcategory": "headphones",
+  "price_usd": 259.99,
+  "weight_kg": 0.34,
+  "tags": [
+   "travel"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 2293
+ },
+ {
+  "sku": "NOR-013",
+  "merchant_id": "nordlys",
+  "title": "Willow ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 107.99,
+  "weight_kg": 0.07,
+  "tags": [
+   "noise-cancelling",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.6,
+  "reviews": 1395
+ },
+ {
+  "sku": "NOR-014",
+  "merchant_id": "nordlys",
+  "title": "Fjord True Wireless Earbuds",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 29.99,
+  "weight_kg": 0.06,
+  "tags": [
+   "noise-cancelling",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 1036
+ },
+ {
+  "sku": "NOR-015",
+  "merchant_id": "nordlys",
+  "title": "Basalt ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 123.99,
+  "weight_kg": 0.07,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.6,
+  "reviews": 1406
+ },
+ {
+  "sku": "NOR-016",
+  "merchant_id": "nordlys",
+  "title": "Atlas ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 194.99,
+  "weight_kg": 0.05,
+  "tags": [
+   "gift",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 375
+ },
+ {
+  "sku": "NOR-017",
+  "merchant_id": "nordlys",
+  "title": "Atlas ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 210.99,
+  "weight_kg": 0.06,
+  "tags": [
+   "gift",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.8,
+  "reviews": 1644
+ },
+ {
+  "sku": "NOR-018",
+  "merchant_id": "nordlys",
+  "title": "Nimbus True Wireless Earbuds",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 132.99,
+  "weight_kg": 0.05,
+  "tags": [
+   "sport"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.8,
+  "reviews": 1413
+ },
+ {
+  "sku": "NOR-019",
+  "merchant_id": "nordlys",
+  "title": "Quill ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 220.99,
+  "weight_kg": 0.06,
+  "tags": [
+   "noise-cancelling",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.7,
+  "reviews": 10
+ },
+ {
+  "sku": "NOR-020",
+  "merchant_id": "nordlys",
+  "title": "Summit ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 188.99,
+  "weight_kg": 0.08,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.4,
+  "reviews": 358
+ },
+ {
+  "sku": "NOR-021",
+  "merchant_id": "nordlys",
+  "title": "Willow ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 109.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "gift",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.3,
+  "reviews": 1909
+ },
+ {
+  "sku": "NOR-022",
+  "merchant_id": "nordlys",
+  "title": "Drift ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 160.99,
+  "weight_kg": 0.08,
+  "tags": [
+   "noise-cancelling",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.9,
+  "reviews": 423
+ },
+ {
+  "sku": "NOR-023",
+  "merchant_id": "nordlys",
+  "title": "Sable True Wireless Earbuds",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 115.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "gift",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.8,
+  "reviews": 988
+ },
+ {
+  "sku": "NOR-024",
+  "merchant_id": "nordlys",
+  "title": "Lumen ANC Earbuds Pro",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 137.99,
+  "weight_kg": 0.05,
+  "tags": [
+   "gift",
+   "noise-cancelling",
+   "sport"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 2057
+ },
+ {
+  "sku": "NOR-025",
+  "merchant_id": "nordlys",
+  "title": "Drift True Wireless Earbuds",
+  "category": "electronics",
+  "subcategory": "earbuds",
+  "price_usd": 133.99,
+  "weight_kg": 0.07,
+  "tags": [
+   "noise-cancelling",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 3,
+  "rating": 3.6,
+  "reviews": 495
+ },
+ {
+  "sku": "NOR-026",
+  "merchant_id": "nordlys",
+  "title": "Fjord Waterproof Mini Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 143.99,
+  "weight_kg": 0.73,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 1137
+ },
+ {
+  "sku": "NOR-027",
+  "merchant_id": "nordlys",
+  "title": "Fjord Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 113.99,
+  "weight_kg": 0.98,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.3,
+  "reviews": 2073
+ },
+ {
+  "sku": "NOR-028",
+  "merchant_id": "nordlys",
+  "title": "Sable Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 145.99,
+  "weight_kg": 0.78,
+  "tags": [
+   "gift",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 1066
+ },
+ {
+  "sku": "NOR-029",
+  "merchant_id": "nordlys",
+  "title": "Onyx Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 171.99,
+  "weight_kg": 0.41,
+  "tags": [
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.8,
+  "reviews": 302
+ },
+ {
+  "sku": "NOR-030",
+  "merchant_id": "nordlys",
+  "title": "Cove Waterproof Mini Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 161.99,
+  "weight_kg": 0.44,
+  "tags": [
+   "gift",
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.7,
+  "reviews": 1918
+ },
+ {
+  "sku": "NOR-031",
+  "merchant_id": "nordlys",
+  "title": "Nimbus Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 94.99,
+  "weight_kg": 1.19,
+  "tags": [
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 2114
+ },
+ {
+  "sku": "NOR-032",
+  "merchant_id": "nordlys",
+  "title": "Willow Waterproof Mini Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 98.99,
+  "weight_kg": 0.38,
+  "tags": [
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 77
+ },
+ {
+  "sku": "NOR-033",
+  "merchant_id": "nordlys",
+  "title": "Willow Waterproof Mini Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 115.99,
+  "weight_kg": 1.16,
+  "tags": [
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.5,
+  "reviews": 1116
+ },
+ {
+  "sku": "NOR-034",
+  "merchant_id": "nordlys",
+  "title": "Fjord Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 72.99,
+  "weight_kg": 0.68,
+  "tags": [
+   "gift",
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 2340
+ },
+ {
+  "sku": "NOR-035",
+  "merchant_id": "nordlys",
+  "title": "Summit Waterproof Mini Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 40.99,
+  "weight_kg": 0.92,
+  "tags": [
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 0,
+  "rating": 4.4,
+  "reviews": 1070
+ },
+ {
+  "sku": "NOR-036",
+  "merchant_id": "nordlys",
+  "title": "Ember Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 36.99,
+  "weight_kg": 0.71,
+  "tags": [
+   "gift",
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.3,
+  "reviews": 179
+ },
+ {
+  "sku": "NOR-037",
+  "merchant_id": "nordlys",
+  "title": "Sable Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 188.99,
+  "weight_kg": 0.54,
+  "tags": [
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.3,
+  "reviews": 2178
+ },
+ {
+  "sku": "NOR-038",
+  "merchant_id": "nordlys",
+  "title": "Cove Waterproof Mini Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 102.99,
+  "weight_kg": 0.54,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.4,
+  "reviews": 2074
+ },
+ {
+  "sku": "NOR-039",
+  "merchant_id": "nordlys",
+  "title": "Onyx Portable Bluetooth Speaker",
+  "category": "electronics",
+  "subcategory": "speaker",
+  "price_usd": 114.99,
+  "weight_kg": 0.7,
+  "tags": [
+   "gift",
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 1613
+ },
+ {
+  "sku": "NOR-040",
+  "merchant_id": "nordlys",
+  "title": "Juniper 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 87.99,
+  "weight_kg": 0.41,
+  "tags": [
+   "charging"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.9,
+  "reviews": 534
+ },
+ {
+  "sku": "NOR-041",
+  "merchant_id": "nordlys",
+  "title": "Aurora 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 62.99,
+  "weight_kg": 0.31,
+  "tags": [
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 2075
+ },
+ {
+  "sku": "NOR-042",
+  "merchant_id": "nordlys",
+  "title": "Juniper 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 67.99,
+  "weight_kg": 0.25,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 12,
+  "rating": 3.9,
+  "reviews": 1350
+ },
+ {
+  "sku": "NOR-043",
+  "merchant_id": "nordlys",
+  "title": "Onyx MagSafe Battery Pack",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 36.99,
+  "weight_kg": 0.28,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.0,
+  "reviews": 1947
+ },
+ {
+  "sku": "NOR-044",
+  "merchant_id": "nordlys",
+  "title": "Atlas 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 36.99,
+  "weight_kg": 0.22,
+  "tags": [
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.3,
+  "reviews": 1616
+ },
+ {
+  "sku": "NOR-045",
+  "merchant_id": "nordlys",
+  "title": "Aurora MagSafe Battery Pack",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 40.99,
+  "weight_kg": 0.35,
+  "tags": [
+   "charging"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 2027
+ },
+ {
+  "sku": "NOR-046",
+  "merchant_id": "nordlys",
+  "title": "Drift MagSafe Battery Pack",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 69.99,
+  "weight_kg": 0.21,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.4,
+  "reviews": 944
+ },
+ {
+  "sku": "NOR-047",
+  "merchant_id": "nordlys",
+  "title": "Ember 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 21.99,
+  "weight_kg": 0.44,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.4,
+  "reviews": 2179
+ },
+ {
+  "sku": "NOR-048",
+  "merchant_id": "nordlys",
+  "title": "Nimbus MagSafe Battery Pack",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 37.99,
+  "weight_kg": 0.22,
+  "tags": [
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 1035
+ },
+ {
+  "sku": "NOR-049",
+  "merchant_id": "nordlys",
+  "title": "Ember MagSafe Battery Pack",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 35.99,
+  "weight_kg": 0.26,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.1,
+  "reviews": 1179
+ },
+ {
+  "sku": "NOR-050",
+  "merchant_id": "nordlys",
+  "title": "Fjord 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 24.99,
+  "weight_kg": 0.26,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.5,
+  "reviews": 1103
+ },
+ {
+  "sku": "NOR-051",
+  "merchant_id": "nordlys",
+  "title": "Solace 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 66.99,
+  "weight_kg": 0.33,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 2252
+ },
+ {
+  "sku": "NOR-052",
+  "merchant_id": "nordlys",
+  "title": "Cove MagSafe Battery Pack",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 87.99,
+  "weight_kg": 0.2,
+  "tags": [
+   "charging",
+   "travel"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.0,
+  "reviews": 866
+ },
+ {
+  "sku": "NOR-053",
+  "merchant_id": "nordlys",
+  "title": "Ember 20000mAh Power Bank",
+  "category": "electronics",
+  "subcategory": "power-bank",
+  "price_usd": 28.99,
+  "weight_kg": 0.44,
+  "tags": [
+   "charging"
+  ],
+  "battery": "standalone",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.5,
+  "reviews": 950
+ },
+ {
+  "sku": "NOR-054",
+  "merchant_id": "nordlys",
+  "title": "Summit Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 157.99,
+  "weight_kg": 5.48,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 1411
+ },
+ {
+  "sku": "NOR-055",
+  "merchant_id": "nordlys",
+  "title": "Willow Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 191.99,
+  "weight_kg": 4.97,
+  "tags": [
+   "gift",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.5,
+  "reviews": 1190
+ },
+ {
+  "sku": "NOR-056",
+  "merchant_id": "nordlys",
+  "title": "Atlas Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 171.99,
+  "weight_kg": 6.61,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.5,
+  "reviews": 200
+ },
+ {
+  "sku": "NOR-057",
+  "merchant_id": "nordlys",
+  "title": "Atlas Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 167.99,
+  "weight_kg": 5.9,
+  "tags": [
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.1,
+  "reviews": 1295
+ },
+ {
+  "sku": "NOR-058",
+  "merchant_id": "nordlys",
+  "title": "Cove Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 423.99,
+  "weight_kg": 4.09,
+  "tags": [
+   "gift",
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.8,
+  "reviews": 1685
+ },
+ {
+  "sku": "NOR-059",
+  "merchant_id": "nordlys",
+  "title": "Quill Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 374.99,
+  "weight_kg": 4.15,
+  "tags": [
+   "gift",
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.9,
+  "reviews": 1222
+ },
+ {
+  "sku": "NOR-060",
+  "merchant_id": "nordlys",
+  "title": "Atlas Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 291.99,
+  "weight_kg": 5.45,
+  "tags": [
+   "gift",
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 854
+ },
+ {
+  "sku": "NOR-061",
+  "merchant_id": "nordlys",
+  "title": "Sable Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 341.99,
+  "weight_kg": 5.0,
+  "tags": [
+   "gift",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 374
+ },
+ {
+  "sku": "NOR-062",
+  "merchant_id": "nordlys",
+  "title": "Halo Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 343.99,
+  "weight_kg": 5.1,
+  "tags": [
+   "gift",
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.0,
+  "reviews": 2149
+ },
+ {
+  "sku": "NOR-063",
+  "merchant_id": "nordlys",
+  "title": "Cove Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 243.99,
+  "weight_kg": 5.49,
+  "tags": [
+   "gift",
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 1020
+ },
+ {
+  "sku": "NOR-064",
+  "merchant_id": "nordlys",
+  "title": "Willow Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 375.99,
+  "weight_kg": 4.94,
+  "tags": [
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.0,
+  "reviews": 1941
+ },
+ {
+  "sku": "NOR-065",
+  "merchant_id": "nordlys",
+  "title": "Summit Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 174.99,
+  "weight_kg": 6.78,
+  "tags": [
+   "gift",
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 635
+ },
+ {
+  "sku": "NOR-066",
+  "merchant_id": "nordlys",
+  "title": "Drift Belt-Drive Turntable",
+  "category": "electronics",
+  "subcategory": "turntable",
+  "price_usd": 478.99,
+  "weight_kg": 5.94,
+  "tags": [
+   "home",
+   "vinyl"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.6,
+  "reviews": 955
+ },
+ {
+  "sku": "MAP-001",
+  "merchant_id": "maple",
+  "title": "Fjord Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 183.99,
+  "weight_kg": 0.46,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.9,
+  "reviews": 2390
+ },
+ {
+  "sku": "MAP-002",
+  "merchant_id": "maple",
+  "title": "Cove Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 85.99,
+  "weight_kg": 0.3,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.4,
+  "reviews": 995
+ },
+ {
+  "sku": "MAP-003",
+  "merchant_id": "maple",
+  "title": "Summit Merino Crewneck Sweater",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 125.99,
+  "weight_kg": 0.42,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 3,
+  "rating": 4.1,
+  "reviews": 1723
+ },
+ {
+  "sku": "MAP-004",
+  "merchant_id": "maple",
+  "title": "Ember Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 80.99,
+  "weight_kg": 0.41,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 1626
+ },
+ {
+  "sku": "MAP-005",
+  "merchant_id": "maple",
+  "title": "Cove Merino Crewneck Sweater",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 160.99,
+  "weight_kg": 0.45,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.9,
+  "reviews": 797
+ },
+ {
+  "sku": "MAP-006",
+  "merchant_id": "maple",
+  "title": "Nimbus Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 80.99,
+  "weight_kg": 0.39,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.0,
+  "reviews": 234
+ },
+ {
+  "sku": "MAP-007",
+  "merchant_id": "maple",
+  "title": "Drift Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 56.99,
+  "weight_kg": 0.48,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 3,
+  "rating": 4.0,
+  "reviews": 1289
+ },
+ {
+  "sku": "MAP-008",
+  "merchant_id": "maple",
+  "title": "Solace Merino Crewneck Sweater",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 179.99,
+  "weight_kg": 0.36,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 1534
+ },
+ {
+  "sku": "MAP-009",
+  "merchant_id": "maple",
+  "title": "Lumen Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 72.99,
+  "weight_kg": 0.38,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 852
+ },
+ {
+  "sku": "MAP-010",
+  "merchant_id": "maple",
+  "title": "Willow Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 156.99,
+  "weight_kg": 0.54,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 1529
+ },
+ {
+  "sku": "MAP-011",
+  "merchant_id": "maple",
+  "title": "Onyx Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 76.99,
+  "weight_kg": 0.57,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.6,
+  "reviews": 1660
+ },
+ {
+  "sku": "MAP-012",
+  "merchant_id": "maple",
+  "title": "Fjord Cashmere-Blend Cardigan",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 53.99,
+  "weight_kg": 0.58,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 1118
+ },
+ {
+  "sku": "MAP-013",
+  "merchant_id": "maple",
+  "title": "Lumen Merino Crewneck Sweater",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 85.99,
+  "weight_kg": 0.39,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 270
+ },
+ {
+  "sku": "MAP-014",
+  "merchant_id": "maple",
+  "title": "Aurora Merino Crewneck Sweater",
+  "category": "apparel",
+  "subcategory": "sweater",
+  "price_usd": 64.99,
+  "weight_kg": 0.44,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 2036
+ },
+ {
+  "sku": "MAP-015",
+  "merchant_id": "maple",
+  "title": "Aurora Waxed Cotton Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 302.99,
+  "weight_kg": 1.05,
+  "tags": [
+   "travel",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.6,
+  "reviews": 326
+ },
+ {
+  "sku": "MAP-016",
+  "merchant_id": "maple",
+  "title": "Sable Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 190.99,
+  "weight_kg": 0.87,
+  "tags": [
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 661
+ },
+ {
+  "sku": "MAP-017",
+  "merchant_id": "maple",
+  "title": "Tidal Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 345.99,
+  "weight_kg": 0.58,
+  "tags": [
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.9,
+  "reviews": 1833
+ },
+ {
+  "sku": "MAP-018",
+  "merchant_id": "maple",
+  "title": "Halo Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 123.99,
+  "weight_kg": 1.3,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 1206
+ },
+ {
+  "sku": "MAP-019",
+  "merchant_id": "maple",
+  "title": "Atlas Waxed Cotton Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 185.99,
+  "weight_kg": 0.68,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.8,
+  "reviews": 1155
+ },
+ {
+  "sku": "MAP-020",
+  "merchant_id": "maple",
+  "title": "Cove Waxed Cotton Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 105.99,
+  "weight_kg": 0.72,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 154
+ },
+ {
+  "sku": "MAP-021",
+  "merchant_id": "maple",
+  "title": "Solace Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 212.99,
+  "weight_kg": 1.26,
+  "tags": [
+   "travel",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.6,
+  "reviews": 779
+ },
+ {
+  "sku": "MAP-022",
+  "merchant_id": "maple",
+  "title": "Cove Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 185.99,
+  "weight_kg": 0.9,
+  "tags": [
+   "travel",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 1435
+ },
+ {
+  "sku": "MAP-023",
+  "merchant_id": "maple",
+  "title": "Cove Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 184.99,
+  "weight_kg": 0.68,
+  "tags": [
+   "travel",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.4,
+  "reviews": 1343
+ },
+ {
+  "sku": "MAP-024",
+  "merchant_id": "maple",
+  "title": "Tidal Waxed Cotton Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 137.99,
+  "weight_kg": 0.68,
+  "tags": [
+   "travel",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.6,
+  "reviews": 1622
+ },
+ {
+  "sku": "MAP-025",
+  "merchant_id": "maple",
+  "title": "Onyx Packable Down Jacket",
+  "category": "apparel",
+  "subcategory": "jacket",
+  "price_usd": 255.99,
+  "weight_kg": 0.65,
+  "tags": [
+   "travel",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 213
+ },
+ {
+  "sku": "MAP-026",
+  "merchant_id": "maple",
+  "title": "Basalt Silk Square Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 64.99,
+  "weight_kg": 0.2,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 27
+ },
+ {
+  "sku": "MAP-027",
+  "merchant_id": "maple",
+  "title": "Tidal Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 65.99,
+  "weight_kg": 0.14,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.4,
+  "reviews": 2262
+ },
+ {
+  "sku": "MAP-028",
+  "merchant_id": "maple",
+  "title": "Drift Silk Square Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 33.99,
+  "weight_kg": 0.14,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.8,
+  "reviews": 2137
+ },
+ {
+  "sku": "MAP-029",
+  "merchant_id": "maple",
+  "title": "Halo Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 35.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.7,
+  "reviews": 181
+ },
+ {
+  "sku": "MAP-030",
+  "merchant_id": "maple",
+  "title": "Summit Silk Square Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 30.99,
+  "weight_kg": 0.14,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 806
+ },
+ {
+  "sku": "MAP-031",
+  "merchant_id": "maple",
+  "title": "Summit Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 78.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 12,
+  "rating": 3.6,
+  "reviews": 1014
+ },
+ {
+  "sku": "MAP-032",
+  "merchant_id": "maple",
+  "title": "Cove Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 108.99,
+  "weight_kg": 0.17,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 1257
+ },
+ {
+  "sku": "MAP-033",
+  "merchant_id": "maple",
+  "title": "Tidal Silk Square Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 80.99,
+  "weight_kg": 0.17,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.4,
+  "reviews": 2007
+ },
+ {
+  "sku": "MAP-034",
+  "merchant_id": "maple",
+  "title": "Quill Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 67.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.6,
+  "reviews": 529
+ },
+ {
+  "sku": "MAP-035",
+  "merchant_id": "maple",
+  "title": "Basalt Silk Square Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 59.99,
+  "weight_kg": 0.15,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 1288
+ },
+ {
+  "sku": "MAP-036",
+  "merchant_id": "maple",
+  "title": "Sable Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 30.99,
+  "weight_kg": 0.14,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 451
+ },
+ {
+  "sku": "MAP-037",
+  "merchant_id": "maple",
+  "title": "Cove Wool Scarf",
+  "category": "apparel",
+  "subcategory": "scarf",
+  "price_usd": 118.99,
+  "weight_kg": 0.2,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.6,
+  "reviews": 1036
+ },
+ {
+  "sku": "MAP-038",
+  "merchant_id": "maple",
+  "title": "Lumen Leather Crossbody Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 181.99,
+  "weight_kg": 0.73,
+  "tags": [
+   "gift",
+   "luxury",
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 1309
+ },
+ {
+  "sku": "MAP-039",
+  "merchant_id": "maple",
+  "title": "Basalt Leather Tote Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 152.99,
+  "weight_kg": 1.17,
+  "tags": [
+   "luxury",
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.7,
+  "reviews": 1085
+ },
+ {
+  "sku": "MAP-040",
+  "merchant_id": "maple",
+  "title": "Solace Leather Crossbody Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 97.99,
+  "weight_kg": 1.47,
+  "tags": [
+   "gift",
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.9,
+  "reviews": 1617
+ },
+ {
+  "sku": "MAP-041",
+  "merchant_id": "maple",
+  "title": "Basalt Canvas Weekender Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 218.99,
+  "weight_kg": 0.73,
+  "tags": [
+   "gift",
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.7,
+  "reviews": 200
+ },
+ {
+  "sku": "MAP-042",
+  "merchant_id": "maple",
+  "title": "Juniper Leather Crossbody Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 173.99,
+  "weight_kg": 1.49,
+  "tags": [
+   "gift",
+   "luxury",
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 614
+ },
+ {
+  "sku": "MAP-043",
+  "merchant_id": "maple",
+  "title": "Juniper Leather Crossbody Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 311.99,
+  "weight_kg": 0.93,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.7,
+  "reviews": 189
+ },
+ {
+  "sku": "MAP-044",
+  "merchant_id": "maple",
+  "title": "Aurora Leather Tote Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 79.99,
+  "weight_kg": 0.7,
+  "tags": [
+   "gift",
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.3,
+  "reviews": 550
+ },
+ {
+  "sku": "MAP-045",
+  "merchant_id": "maple",
+  "title": "Cove Canvas Weekender Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 310.99,
+  "weight_kg": 0.72,
+  "tags": [
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.1,
+  "reviews": 263
+ },
+ {
+  "sku": "MAP-046",
+  "merchant_id": "maple",
+  "title": "Drift Leather Crossbody Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 369.99,
+  "weight_kg": 0.84,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1437
+ },
+ {
+  "sku": "MAP-047",
+  "merchant_id": "maple",
+  "title": "Quill Leather Crossbody Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 426.99,
+  "weight_kg": 0.82,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.2,
+  "reviews": 1665
+ },
+ {
+  "sku": "MAP-048",
+  "merchant_id": "maple",
+  "title": "Halo Leather Tote Bag",
+  "category": "apparel",
+  "subcategory": "bag",
+  "price_usd": 138.99,
+  "weight_kg": 0.69,
+  "tags": [
+   "gift",
+   "luxury",
+   "travel"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.7,
+  "reviews": 2079
+ },
+ {
+  "sku": "MAP-049",
+  "merchant_id": "maple",
+  "title": "Tidal Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 25.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 40,
+  "rating": 4.7,
+  "reviews": 1908
+ },
+ {
+  "sku": "MAP-050",
+  "merchant_id": "maple",
+  "title": "Ember Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 18.99,
+  "weight_kg": 0.16,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.7,
+  "reviews": 1081
+ },
+ {
+  "sku": "MAP-051",
+  "merchant_id": "maple",
+  "title": "Fjord Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 27.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 891
+ },
+ {
+  "sku": "MAP-052",
+  "merchant_id": "maple",
+  "title": "Ember Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 18.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 789
+ },
+ {
+  "sku": "MAP-053",
+  "merchant_id": "maple",
+  "title": "Willow Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 27.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 29
+ },
+ {
+  "sku": "MAP-054",
+  "merchant_id": "maple",
+  "title": "Aurora Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 34.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 2318
+ },
+ {
+  "sku": "MAP-055",
+  "merchant_id": "maple",
+  "title": "Halo Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 15.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.5,
+  "reviews": 129
+ },
+ {
+  "sku": "MAP-056",
+  "merchant_id": "maple",
+  "title": "Fjord Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 28.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 1491
+ },
+ {
+  "sku": "MAP-057",
+  "merchant_id": "maple",
+  "title": "Cove Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 32.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.7,
+  "reviews": 461
+ },
+ {
+  "sku": "MAP-058",
+  "merchant_id": "maple",
+  "title": "Fjord Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 33.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.5,
+  "reviews": 403
+ },
+ {
+  "sku": "MAP-059",
+  "merchant_id": "maple",
+  "title": "Cove Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 21.99,
+  "weight_kg": 0.15,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.5,
+  "reviews": 1510
+ },
+ {
+  "sku": "MAP-060",
+  "merchant_id": "maple",
+  "title": "Lumen Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 32.99,
+  "weight_kg": 0.15,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.2,
+  "reviews": 405
+ },
+ {
+  "sku": "MAP-061",
+  "merchant_id": "maple",
+  "title": "Basalt Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 29.99,
+  "weight_kg": 0.16,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.1,
+  "reviews": 2147
+ },
+ {
+  "sku": "MAP-062",
+  "merchant_id": "maple",
+  "title": "Cove Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 30.99,
+  "weight_kg": 0.15,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.4,
+  "reviews": 758
+ },
+ {
+  "sku": "MAP-063",
+  "merchant_id": "maple",
+  "title": "Summit Organic Cotton Tee (Final Sale)",
+  "category": "apparel",
+  "subcategory": "final-sale-tee",
+  "price_usd": 34.99,
+  "weight_kg": 0.18,
+  "tags": [
+   "basics"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": true,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 951
+ },
+ {
+  "sku": "KIK-001",
+  "merchant_id": "kiko",
+  "title": "Halo Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 65.99,
+  "weight_kg": 1.49,
+  "tags": [
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.5,
+  "reviews": 1619
+ },
+ {
+  "sku": "KIK-002",
+  "merchant_id": "kiko",
+  "title": "Ember Scented Candle Trio",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 63.99,
+  "weight_kg": 0.84,
+  "tags": [
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.8,
+  "reviews": 1890
+ },
+ {
+  "sku": "KIK-003",
+  "merchant_id": "kiko",
+  "title": "Drift Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 36.99,
+  "weight_kg": 1.36,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.4,
+  "reviews": 1056
+ },
+ {
+  "sku": "KIK-004",
+  "merchant_id": "kiko",
+  "title": "Nimbus Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 35.99,
+  "weight_kg": 1.06,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 1017
+ },
+ {
+  "sku": "KIK-005",
+  "merchant_id": "kiko",
+  "title": "Lumen Scented Candle Trio",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 27.99,
+  "weight_kg": 1.48,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 1576
+ },
+ {
+  "sku": "KIK-006",
+  "merchant_id": "kiko",
+  "title": "Drift Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 58.99,
+  "weight_kg": 0.78,
+  "tags": [
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.7,
+  "reviews": 1903
+ },
+ {
+  "sku": "KIK-007",
+  "merchant_id": "kiko",
+  "title": "Fjord Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 38.99,
+  "weight_kg": 1.05,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.8,
+  "reviews": 1660
+ },
+ {
+  "sku": "KIK-008",
+  "merchant_id": "kiko",
+  "title": "Aurora Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 64.99,
+  "weight_kg": 1.27,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 511
+ },
+ {
+  "sku": "KIK-009",
+  "merchant_id": "kiko",
+  "title": "Quill Scented Candle Trio",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 34.99,
+  "weight_kg": 0.98,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 1867
+ },
+ {
+  "sku": "KIK-010",
+  "merchant_id": "kiko",
+  "title": "Aurora Scented Candle Trio",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 44.99,
+  "weight_kg": 1.41,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 438
+ },
+ {
+  "sku": "KIK-011",
+  "merchant_id": "kiko",
+  "title": "Fjord Scented Candle Trio",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 46.99,
+  "weight_kg": 1.45,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 1951
+ },
+ {
+  "sku": "KIK-012",
+  "merchant_id": "kiko",
+  "title": "Sable Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 50.99,
+  "weight_kg": 0.97,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.2,
+  "reviews": 504
+ },
+ {
+  "sku": "KIK-013",
+  "merchant_id": "kiko",
+  "title": "Basalt Soy Candle Set",
+  "category": "home",
+  "subcategory": "candle",
+  "price_usd": 31.99,
+  "weight_kg": 0.67,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR"
+  ],
+  "stock": 0,
+  "rating": 3.7,
+  "reviews": 1643
+ },
+ {
+  "sku": "KIK-014",
+  "merchant_id": "kiko",
+  "title": "Nimbus Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 35.99,
+  "weight_kg": 0.48,
+  "tags": [
+   "fragile",
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 1449
+ },
+ {
+  "sku": "KIK-015",
+  "merchant_id": "kiko",
+  "title": "Tidal Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 58.99,
+  "weight_kg": 1.34,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.5,
+  "reviews": 1041
+ },
+ {
+  "sku": "KIK-016",
+  "merchant_id": "kiko",
+  "title": "Tidal Stoneware Mug Set",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 36.99,
+  "weight_kg": 0.83,
+  "tags": [
+   "fragile",
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.0,
+  "reviews": 352
+ },
+ {
+  "sku": "KIK-017",
+  "merchant_id": "kiko",
+  "title": "Basalt Stoneware Mug Set",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 55.99,
+  "weight_kg": 1.39,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 50
+ },
+ {
+  "sku": "KIK-018",
+  "merchant_id": "kiko",
+  "title": "Cove Stoneware Mug Set",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 43.99,
+  "weight_kg": 0.57,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 628
+ },
+ {
+  "sku": "KIK-019",
+  "merchant_id": "kiko",
+  "title": "Cove Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 49.99,
+  "weight_kg": 1.13,
+  "tags": [
+   "fragile"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1219
+ },
+ {
+  "sku": "KIK-020",
+  "merchant_id": "kiko",
+  "title": "Cove Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 45.99,
+  "weight_kg": 0.93,
+  "tags": [
+   "fragile"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 962
+ },
+ {
+  "sku": "KIK-021",
+  "merchant_id": "kiko",
+  "title": "Drift Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 36.99,
+  "weight_kg": 0.57,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.2,
+  "reviews": 30
+ },
+ {
+  "sku": "KIK-022",
+  "merchant_id": "kiko",
+  "title": "Halo Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 35.99,
+  "weight_kg": 1.41,
+  "tags": [
+   "fragile",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 1479
+ },
+ {
+  "sku": "KIK-023",
+  "merchant_id": "kiko",
+  "title": "Aurora Stoneware Mug Set",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 41.99,
+  "weight_kg": 0.8,
+  "tags": [
+   "fragile"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.1,
+  "reviews": 594
+ },
+ {
+  "sku": "KIK-024",
+  "merchant_id": "kiko",
+  "title": "Fjord Stoneware Mug Set",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 46.99,
+  "weight_kg": 1.43,
+  "tags": [
+   "fragile",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 866
+ },
+ {
+  "sku": "KIK-025",
+  "merchant_id": "kiko",
+  "title": "Juniper Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 30.99,
+  "weight_kg": 0.75,
+  "tags": [
+   "fragile",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR"
+  ],
+  "stock": 12,
+  "rating": 4.2,
+  "reviews": 1115
+ },
+ {
+  "sku": "KIK-026",
+  "merchant_id": "kiko",
+  "title": "Sable Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 57.99,
+  "weight_kg": 0.8,
+  "tags": [
+   "fragile",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.3,
+  "reviews": 361
+ },
+ {
+  "sku": "KIK-027",
+  "merchant_id": "kiko",
+  "title": "Fjord Hand-Glazed Ceramic Mug",
+  "category": "home",
+  "subcategory": "mug",
+  "price_usd": 46.99,
+  "weight_kg": 0.46,
+  "tags": [
+   "fragile",
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.7,
+  "reviews": 1948
+ },
+ {
+  "sku": "KIK-028",
+  "merchant_id": "kiko",
+  "title": "Fjord Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 174.99,
+  "weight_kg": 3.9,
+  "tags": [
+   "home"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.4,
+  "reviews": 1878
+ },
+ {
+  "sku": "KIK-029",
+  "merchant_id": "kiko",
+  "title": "Halo Rechargeable Table Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 184.99,
+  "weight_kg": 1.32,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1270
+ },
+ {
+  "sku": "KIK-030",
+  "merchant_id": "kiko",
+  "title": "Onyx Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 228.99,
+  "weight_kg": 0.91,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 489
+ },
+ {
+  "sku": "KIK-031",
+  "merchant_id": "kiko",
+  "title": "Tidal Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 137.99,
+  "weight_kg": 3.88,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 420
+ },
+ {
+  "sku": "KIK-032",
+  "merchant_id": "kiko",
+  "title": "Ember Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 85.99,
+  "weight_kg": 0.82,
+  "tags": [
+   "home"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR"
+  ],
+  "stock": 3,
+  "rating": 4.7,
+  "reviews": 531
+ },
+ {
+  "sku": "KIK-033",
+  "merchant_id": "kiko",
+  "title": "Summit Rechargeable Table Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 99.99,
+  "weight_kg": 4.67,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 596
+ },
+ {
+  "sku": "KIK-034",
+  "merchant_id": "kiko",
+  "title": "Ember Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 177.99,
+  "weight_kg": 5.65,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.5,
+  "reviews": 329
+ },
+ {
+  "sku": "KIK-035",
+  "merchant_id": "kiko",
+  "title": "Willow Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 107.99,
+  "weight_kg": 5.14,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.8,
+  "reviews": 1800
+ },
+ {
+  "sku": "KIK-036",
+  "merchant_id": "kiko",
+  "title": "Summit Rechargeable Table Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 70.99,
+  "weight_kg": 4.15,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1117
+ },
+ {
+  "sku": "KIK-037",
+  "merchant_id": "kiko",
+  "title": "Lumen Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 100.99,
+  "weight_kg": 4.97,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 2397
+ },
+ {
+  "sku": "KIK-038",
+  "merchant_id": "kiko",
+  "title": "Tidal Rechargeable Table Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 121.99,
+  "weight_kg": 5.46,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.8,
+  "reviews": 1733
+ },
+ {
+  "sku": "KIK-039",
+  "merchant_id": "kiko",
+  "title": "Halo Rechargeable Table Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 102.99,
+  "weight_kg": 5.96,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 2246
+ },
+ {
+  "sku": "KIK-040",
+  "merchant_id": "kiko",
+  "title": "Summit Linen Shade Floor Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 156.99,
+  "weight_kg": 2.79,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 1622
+ },
+ {
+  "sku": "KIK-041",
+  "merchant_id": "kiko",
+  "title": "Quill Rechargeable Table Lamp",
+  "category": "home",
+  "subcategory": "lamp",
+  "price_usd": 242.99,
+  "weight_kg": 2.8,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 1633
+ },
+ {
+  "sku": "KIK-042",
+  "merchant_id": "kiko",
+  "title": "Sable Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 146.99,
+  "weight_kg": 1.59,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.5,
+  "reviews": 1190
+ },
+ {
+  "sku": "KIK-043",
+  "merchant_id": "kiko",
+  "title": "Basalt Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 93.99,
+  "weight_kg": 1.04,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.3,
+  "reviews": 337
+ },
+ {
+  "sku": "KIK-044",
+  "merchant_id": "kiko",
+  "title": "Drift Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 114.99,
+  "weight_kg": 1.02,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 1994
+ },
+ {
+  "sku": "KIK-045",
+  "merchant_id": "kiko",
+  "title": "Cove Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 150.99,
+  "weight_kg": 1.45,
+  "tags": [
+   "gift",
+   "home",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 826
+ },
+ {
+  "sku": "KIK-046",
+  "merchant_id": "kiko",
+  "title": "Halo Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 58.99,
+  "weight_kg": 1.87,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 1630
+ },
+ {
+  "sku": "KIK-047",
+  "merchant_id": "kiko",
+  "title": "Solace Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 77.99,
+  "weight_kg": 1.96,
+  "tags": [
+   "gift",
+   "home",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.7,
+  "reviews": 1522
+ },
+ {
+  "sku": "KIK-048",
+  "merchant_id": "kiko",
+  "title": "Nimbus Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 67.99,
+  "weight_kg": 1.06,
+  "tags": [
+   "gift",
+   "home",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 1983
+ },
+ {
+  "sku": "KIK-049",
+  "merchant_id": "kiko",
+  "title": "Fjord Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 64.99,
+  "weight_kg": 1.68,
+  "tags": [
+   "home",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.4,
+  "reviews": 1931
+ },
+ {
+  "sku": "KIK-050",
+  "merchant_id": "kiko",
+  "title": "Lumen Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 77.99,
+  "weight_kg": 1.17,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 1919
+ },
+ {
+  "sku": "KIK-051",
+  "merchant_id": "kiko",
+  "title": "Cove Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 66.99,
+  "weight_kg": 1.62,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 400
+ },
+ {
+  "sku": "KIK-052",
+  "merchant_id": "kiko",
+  "title": "Willow Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 118.99,
+  "weight_kg": 1.82,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.9,
+  "reviews": 235
+ },
+ {
+  "sku": "KIK-053",
+  "merchant_id": "kiko",
+  "title": "Halo Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 109.99,
+  "weight_kg": 1.27,
+  "tags": [
+   "gift",
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 1217
+ },
+ {
+  "sku": "KIK-054",
+  "merchant_id": "kiko",
+  "title": "Lumen Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 77.99,
+  "weight_kg": 1.48,
+  "tags": [
+   "winter"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.3,
+  "reviews": 867
+ },
+ {
+  "sku": "KIK-055",
+  "merchant_id": "kiko",
+  "title": "Onyx Chunky Knit Throw Blanket",
+  "category": "home",
+  "subcategory": "throw",
+  "price_usd": 140.99,
+  "weight_kg": 1.97,
+  "tags": [
+   "gift",
+   "home"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.5,
+  "reviews": 1188
+ },
+ {
+  "sku": "VEL-001",
+  "merchant_id": "vela",
+  "title": "Halo Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 163.99,
+  "weight_kg": 0.23,
+  "tags": [
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 2095
+ },
+ {
+  "sku": "VEL-002",
+  "merchant_id": "vela",
+  "title": "Drift Eau de Toilette 100ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 39.99,
+  "weight_kg": 0.31,
+  "tags": [
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.5,
+  "reviews": 1678
+ },
+ {
+  "sku": "VEL-003",
+  "merchant_id": "vela",
+  "title": "Cove Eau de Toilette 100ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 124.99,
+  "weight_kg": 0.24,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.3,
+  "reviews": 361
+ },
+ {
+  "sku": "VEL-004",
+  "merchant_id": "vela",
+  "title": "Summit Eau de Toilette 100ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 65.99,
+  "weight_kg": 0.33,
+  "tags": [
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.4,
+  "reviews": 2131
+ },
+ {
+  "sku": "VEL-005",
+  "merchant_id": "vela",
+  "title": "Tidal Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 116.99,
+  "weight_kg": 0.26,
+  "tags": [
+   "gift",
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.8,
+  "reviews": 1955
+ },
+ {
+  "sku": "VEL-006",
+  "merchant_id": "vela",
+  "title": "Drift Eau de Toilette 100ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 76.99,
+  "weight_kg": 0.4,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 22
+ },
+ {
+  "sku": "VEL-007",
+  "merchant_id": "vela",
+  "title": "Basalt Eau de Toilette 100ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 184.99,
+  "weight_kg": 0.27,
+  "tags": [
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 1565
+ },
+ {
+  "sku": "VEL-008",
+  "merchant_id": "vela",
+  "title": "Fjord Eau de Toilette 100ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 169.99,
+  "weight_kg": 0.3,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 365
+ },
+ {
+  "sku": "VEL-009",
+  "merchant_id": "vela",
+  "title": "Nimbus Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 64.99,
+  "weight_kg": 0.31,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.8,
+  "reviews": 802
+ },
+ {
+  "sku": "VEL-010",
+  "merchant_id": "vela",
+  "title": "Atlas Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 164.99,
+  "weight_kg": 0.29,
+  "tags": [
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.9,
+  "reviews": 387
+ },
+ {
+  "sku": "VEL-011",
+  "merchant_id": "vela",
+  "title": "Halo Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 79.99,
+  "weight_kg": 0.32,
+  "tags": [
+   "gift",
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.0,
+  "reviews": 563
+ },
+ {
+  "sku": "VEL-012",
+  "merchant_id": "vela",
+  "title": "Onyx Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 168.99,
+  "weight_kg": 0.31,
+  "tags": [
+   "gift",
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 1725
+ },
+ {
+  "sku": "VEL-013",
+  "merchant_id": "vela",
+  "title": "Sable Eau de Parfum 50ml",
+  "category": "beauty",
+  "subcategory": "perfume",
+  "price_usd": 98.99,
+  "weight_kg": 0.36,
+  "tags": [
+   "gift",
+   "luxury"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 1787
+ },
+ {
+  "sku": "VEL-014",
+  "merchant_id": "vela",
+  "title": "Lumen Night Repair Cream 50ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 112.99,
+  "weight_kg": 0.2,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 1495
+ },
+ {
+  "sku": "VEL-015",
+  "merchant_id": "vela",
+  "title": "Solace Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 26.99,
+  "weight_kg": 0.2,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.0,
+  "reviews": 1629
+ },
+ {
+  "sku": "VEL-016",
+  "merchant_id": "vela",
+  "title": "Quill Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 108.99,
+  "weight_kg": 0.28,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.3,
+  "reviews": 2224
+ },
+ {
+  "sku": "VEL-017",
+  "merchant_id": "vela",
+  "title": "Fjord Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 46.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.9,
+  "reviews": 686
+ },
+ {
+  "sku": "VEL-018",
+  "merchant_id": "vela",
+  "title": "Solace Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 84.99,
+  "weight_kg": 0.2,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 610
+ },
+ {
+  "sku": "VEL-019",
+  "merchant_id": "vela",
+  "title": "Quill Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 75.99,
+  "weight_kg": 0.28,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 2240
+ },
+ {
+  "sku": "VEL-020",
+  "merchant_id": "vela",
+  "title": "Juniper Night Repair Cream 50ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 86.99,
+  "weight_kg": 0.23,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.7,
+  "reviews": 1246
+ },
+ {
+  "sku": "VEL-021",
+  "merchant_id": "vela",
+  "title": "Summit Night Repair Cream 50ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 109.99,
+  "weight_kg": 0.17,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 1447
+ },
+ {
+  "sku": "VEL-022",
+  "merchant_id": "vela",
+  "title": "Halo Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 54.99,
+  "weight_kg": 0.15,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.6,
+  "reviews": 652
+ },
+ {
+  "sku": "VEL-023",
+  "merchant_id": "vela",
+  "title": "Onyx Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 85.99,
+  "weight_kg": 0.23,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 2136
+ },
+ {
+  "sku": "VEL-024",
+  "merchant_id": "vela",
+  "title": "Nimbus Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 64.99,
+  "weight_kg": 0.13,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 392
+ },
+ {
+  "sku": "VEL-025",
+  "merchant_id": "vela",
+  "title": "Summit Night Repair Cream 50ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 105.99,
+  "weight_kg": 0.28,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 1684
+ },
+ {
+  "sku": "VEL-026",
+  "merchant_id": "vela",
+  "title": "Onyx Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 73.99,
+  "weight_kg": 0.21,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.7,
+  "reviews": 1878
+ },
+ {
+  "sku": "VEL-027",
+  "merchant_id": "vela",
+  "title": "Juniper Night Repair Cream 50ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 51.99,
+  "weight_kg": 0.21,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 2049
+ },
+ {
+  "sku": "VEL-028",
+  "merchant_id": "vela",
+  "title": "Willow Night Repair Cream 50ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 52.99,
+  "weight_kg": 0.26,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.6,
+  "reviews": 1355
+ },
+ {
+  "sku": "VEL-029",
+  "merchant_id": "vela",
+  "title": "Lumen Hydrating Serum 30ml",
+  "category": "beauty",
+  "subcategory": "skincare",
+  "price_usd": 124.99,
+  "weight_kg": 0.19,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 2040
+ },
+ {
+  "sku": "VEL-030",
+  "merchant_id": "vela",
+  "title": "Onyx Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 66.99,
+  "weight_kg": 0.46,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.5,
+  "reviews": 1441
+ },
+ {
+  "sku": "VEL-031",
+  "merchant_id": "vela",
+  "title": "Quill Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 76.99,
+  "weight_kg": 0.33,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.8,
+  "reviews": 1996
+ },
+ {
+  "sku": "VEL-032",
+  "merchant_id": "vela",
+  "title": "Willow Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 82.99,
+  "weight_kg": 0.48,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.9,
+  "reviews": 310
+ },
+ {
+  "sku": "VEL-033",
+  "merchant_id": "vela",
+  "title": "Juniper Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 36.99,
+  "weight_kg": 0.51,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 2071
+ },
+ {
+  "sku": "VEL-034",
+  "merchant_id": "vela",
+  "title": "Cove Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 41.99,
+  "weight_kg": 0.48,
+  "tags": [
+   "gift",
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.6,
+  "reviews": 1259
+ },
+ {
+  "sku": "VEL-035",
+  "merchant_id": "vela",
+  "title": "Onyx Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 93.99,
+  "weight_kg": 0.33,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.7,
+  "reviews": 2269
+ },
+ {
+  "sku": "VEL-036",
+  "merchant_id": "vela",
+  "title": "Atlas Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 69.99,
+  "weight_kg": 0.34,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.6,
+  "reviews": 701
+ },
+ {
+  "sku": "VEL-037",
+  "merchant_id": "vela",
+  "title": "Sable Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 86.99,
+  "weight_kg": 0.54,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1325
+ },
+ {
+  "sku": "VEL-038",
+  "merchant_id": "vela",
+  "title": "Drift Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 53.99,
+  "weight_kg": 0.38,
+  "tags": [
+   "gift"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.7,
+  "reviews": 1582
+ },
+ {
+  "sku": "VEL-039",
+  "merchant_id": "vela",
+  "title": "Aurora Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 44.99,
+  "weight_kg": 0.53,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.3,
+  "reviews": 1024
+ },
+ {
+  "sku": "VEL-040",
+  "merchant_id": "vela",
+  "title": "Nimbus Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 40.99,
+  "weight_kg": 0.35,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.0,
+  "reviews": 1035
+ },
+ {
+  "sku": "VEL-041",
+  "merchant_id": "vela",
+  "title": "Summit Mini Skincare Gift Set",
+  "category": "beauty",
+  "subcategory": "gift-set",
+  "price_usd": 46.99,
+  "weight_kg": 0.52,
+  "tags": [
+   "self-care"
+  ],
+  "battery": "none",
+  "liquid": true,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.0,
+  "reviews": 1987
+ },
+ {
+  "sku": "TRA-001",
+  "merchant_id": "trailhead",
+  "title": "Nimbus Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 29.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.9,
+  "reviews": 1582
+ },
+ {
+  "sku": "TRA-002",
+  "merchant_id": "trailhead",
+  "title": "Lumen Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 58.99,
+  "weight_kg": 0.11,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.1,
+  "reviews": 1413
+ },
+ {
+  "sku": "TRA-003",
+  "merchant_id": "trailhead",
+  "title": "Nimbus Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 21.99,
+  "weight_kg": 0.1,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.6,
+  "reviews": 807
+ },
+ {
+  "sku": "TRA-004",
+  "merchant_id": "trailhead",
+  "title": "Atlas Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 52.99,
+  "weight_kg": 0.14,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.9,
+  "reviews": 1662
+ },
+ {
+  "sku": "TRA-005",
+  "merchant_id": "trailhead",
+  "title": "Willow Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 36.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 1510
+ },
+ {
+  "sku": "TRA-006",
+  "merchant_id": "trailhead",
+  "title": "Onyx Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 43.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.7,
+  "reviews": 1579
+ },
+ {
+  "sku": "TRA-007",
+  "merchant_id": "trailhead",
+  "title": "Aurora Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 37.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.7,
+  "reviews": 449
+ },
+ {
+  "sku": "TRA-008",
+  "merchant_id": "trailhead",
+  "title": "Ember Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 67.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.6,
+  "reviews": 1637
+ },
+ {
+  "sku": "TRA-009",
+  "merchant_id": "trailhead",
+  "title": "Juniper Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 43.99,
+  "weight_kg": 0.13,
+  "tags": [
+   "camping"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.4,
+  "reviews": 1442
+ },
+ {
+  "sku": "TRA-010",
+  "merchant_id": "trailhead",
+  "title": "Tidal Rechargeable Headlamp",
+  "category": "outdoor",
+  "subcategory": "headlamp",
+  "price_usd": 58.99,
+  "weight_kg": 0.1,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.8,
+  "reviews": 1112
+ },
+ {
+  "sku": "TRA-011",
+  "merchant_id": "trailhead",
+  "title": "Nimbus 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 290.99,
+  "weight_kg": 1.76,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 1276
+ },
+ {
+  "sku": "TRA-012",
+  "merchant_id": "trailhead",
+  "title": "Halo 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 348.99,
+  "weight_kg": 1.53,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.7,
+  "reviews": 1175
+ },
+ {
+  "sku": "TRA-013",
+  "merchant_id": "trailhead",
+  "title": "Fjord 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 489.99,
+  "weight_kg": 1.25,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 1711
+ },
+ {
+  "sku": "TRA-014",
+  "merchant_id": "trailhead",
+  "title": "Willow 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 247.99,
+  "weight_kg": 2.43,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 1857
+ },
+ {
+  "sku": "TRA-015",
+  "merchant_id": "trailhead",
+  "title": "Sable 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 385.99,
+  "weight_kg": 2.08,
+  "tags": [
+   "camping"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 2293
+ },
+ {
+  "sku": "TRA-016",
+  "merchant_id": "trailhead",
+  "title": "Atlas 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 340.99,
+  "weight_kg": 2.03,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.9,
+  "reviews": 1689
+ },
+ {
+  "sku": "TRA-017",
+  "merchant_id": "trailhead",
+  "title": "Ember 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 371.99,
+  "weight_kg": 2.09,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.8,
+  "reviews": 2114
+ },
+ {
+  "sku": "TRA-018",
+  "merchant_id": "trailhead",
+  "title": "Quill 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 476.99,
+  "weight_kg": 1.59,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.3,
+  "reviews": 486
+ },
+ {
+  "sku": "TRA-019",
+  "merchant_id": "trailhead",
+  "title": "Onyx 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 415.99,
+  "weight_kg": 2.07,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.4,
+  "reviews": 53
+ },
+ {
+  "sku": "TRA-020",
+  "merchant_id": "trailhead",
+  "title": "Basalt 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 221.99,
+  "weight_kg": 1.57,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 465
+ },
+ {
+  "sku": "TRA-021",
+  "merchant_id": "trailhead",
+  "title": "Halo 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 304.99,
+  "weight_kg": 1.58,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.1,
+  "reviews": 1991
+ },
+ {
+  "sku": "TRA-022",
+  "merchant_id": "trailhead",
+  "title": "Ember 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 492.99,
+  "weight_kg": 1.34,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.6,
+  "reviews": 1321
+ },
+ {
+  "sku": "TRA-023",
+  "merchant_id": "trailhead",
+  "title": "Aurora 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 470.99,
+  "weight_kg": 2.02,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.5,
+  "reviews": 106
+ },
+ {
+  "sku": "TRA-024",
+  "merchant_id": "trailhead",
+  "title": "Willow 2-Person Backpacking Tent",
+  "category": "outdoor",
+  "subcategory": "tent",
+  "price_usd": 252.99,
+  "weight_kg": 2.03,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.5,
+  "reviews": 1274
+ },
+ {
+  "sku": "TRA-025",
+  "merchant_id": "trailhead",
+  "title": "Lumen Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 24.99,
+  "weight_kg": 0.46,
+  "tags": [
+   "gift",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 983
+ },
+ {
+  "sku": "TRA-026",
+  "merchant_id": "trailhead",
+  "title": "Fjord Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 22.99,
+  "weight_kg": 0.58,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.0,
+  "reviews": 648
+ },
+ {
+  "sku": "TRA-027",
+  "merchant_id": "trailhead",
+  "title": "Juniper Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 23.99,
+  "weight_kg": 0.43,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.1,
+  "reviews": 784
+ },
+ {
+  "sku": "TRA-028",
+  "merchant_id": "trailhead",
+  "title": "Cove Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 19.99,
+  "weight_kg": 0.57,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.4,
+  "reviews": 2110
+ },
+ {
+  "sku": "TRA-029",
+  "merchant_id": "trailhead",
+  "title": "Tidal Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 20.99,
+  "weight_kg": 0.59,
+  "tags": [
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 3,
+  "rating": 4.0,
+  "reviews": 20
+ },
+ {
+  "sku": "TRA-030",
+  "merchant_id": "trailhead",
+  "title": "Quill Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 36.99,
+  "weight_kg": 0.51,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 4.8,
+  "reviews": 336
+ },
+ {
+  "sku": "TRA-031",
+  "merchant_id": "trailhead",
+  "title": "Fjord Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 37.99,
+  "weight_kg": 0.51,
+  "tags": [
+   "gift",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.7,
+  "reviews": 2175
+ },
+ {
+  "sku": "TRA-032",
+  "merchant_id": "trailhead",
+  "title": "Aurora Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 25.99,
+  "weight_kg": 0.54,
+  "tags": [
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.0,
+  "reviews": 2381
+ },
+ {
+  "sku": "TRA-033",
+  "merchant_id": "trailhead",
+  "title": "Tidal Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 34.99,
+  "weight_kg": 0.48,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 4.9,
+  "reviews": 833
+ },
+ {
+  "sku": "TRA-034",
+  "merchant_id": "trailhead",
+  "title": "Onyx Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 25.99,
+  "weight_kg": 0.53,
+  "tags": [
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.8,
+  "reviews": 2007
+ },
+ {
+  "sku": "TRA-035",
+  "merchant_id": "trailhead",
+  "title": "Nimbus Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 25.99,
+  "weight_kg": 0.42,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 1803
+ },
+ {
+  "sku": "TRA-036",
+  "merchant_id": "trailhead",
+  "title": "Drift Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 37.99,
+  "weight_kg": 0.5,
+  "tags": [
+   "gift",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 787
+ },
+ {
+  "sku": "TRA-037",
+  "merchant_id": "trailhead",
+  "title": "Summit Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 23.99,
+  "weight_kg": 0.41,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.5,
+  "reviews": 875
+ },
+ {
+  "sku": "TRA-038",
+  "merchant_id": "trailhead",
+  "title": "Quill Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 22.99,
+  "weight_kg": 0.58,
+  "tags": [
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.7,
+  "reviews": 472
+ },
+ {
+  "sku": "TRA-039",
+  "merchant_id": "trailhead",
+  "title": "Basalt Insulated Water Bottle 1L",
+  "category": "outdoor",
+  "subcategory": "bottle",
+  "price_usd": 30.99,
+  "weight_kg": 0.56,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.8,
+  "reviews": 2104
+ },
+ {
+  "sku": "TRA-040",
+  "merchant_id": "trailhead",
+  "title": "Sable Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 103.99,
+  "weight_kg": 0.72,
+  "tags": [
+   "camping"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 465
+ },
+ {
+  "sku": "TRA-041",
+  "merchant_id": "trailhead",
+  "title": "Fjord Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 61.99,
+  "weight_kg": 0.61,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 40,
+  "rating": 3.6,
+  "reviews": 1061
+ },
+ {
+  "sku": "TRA-042",
+  "merchant_id": "trailhead",
+  "title": "Halo Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 88.99,
+  "weight_kg": 0.78,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.9,
+  "reviews": 1103
+ },
+ {
+  "sku": "TRA-043",
+  "merchant_id": "trailhead",
+  "title": "Quill Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 41.99,
+  "weight_kg": 0.64,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.7,
+  "reviews": 1610
+ },
+ {
+  "sku": "TRA-044",
+  "merchant_id": "trailhead",
+  "title": "Summit Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 101.99,
+  "weight_kg": 0.46,
+  "tags": [
+   "camping"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.2,
+  "reviews": 1277
+ },
+ {
+  "sku": "TRA-045",
+  "merchant_id": "trailhead",
+  "title": "Drift Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 58.99,
+  "weight_kg": 0.81,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.9,
+  "reviews": 1377
+ },
+ {
+  "sku": "TRA-046",
+  "merchant_id": "trailhead",
+  "title": "Summit Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 59.99,
+  "weight_kg": 0.91,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.4,
+  "reviews": 1119
+ },
+ {
+  "sku": "TRA-047",
+  "merchant_id": "trailhead",
+  "title": "Willow Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 44.99,
+  "weight_kg": 0.55,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.8,
+  "reviews": 393
+ },
+ {
+  "sku": "TRA-048",
+  "merchant_id": "trailhead",
+  "title": "Cove Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 95.99,
+  "weight_kg": 0.55,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.5,
+  "reviews": 1401
+ },
+ {
+  "sku": "TRA-049",
+  "merchant_id": "trailhead",
+  "title": "Basalt Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 70.99,
+  "weight_kg": 0.58,
+  "tags": [
+   "camping"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 1975
+ },
+ {
+  "sku": "TRA-050",
+  "merchant_id": "trailhead",
+  "title": "Sable Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 119.99,
+  "weight_kg": 1.0,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 3,
+  "rating": 3.4,
+  "reviews": 1859
+ },
+ {
+  "sku": "TRA-051",
+  "merchant_id": "trailhead",
+  "title": "Willow Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 74.99,
+  "weight_kg": 0.95,
+  "tags": [
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.5,
+  "reviews": 1035
+ },
+ {
+  "sku": "TRA-052",
+  "merchant_id": "trailhead",
+  "title": "Onyx Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 45.99,
+  "weight_kg": 0.95,
+  "tags": [
+   "camping"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 1919
+ },
+ {
+  "sku": "TRA-053",
+  "merchant_id": "trailhead",
+  "title": "Basalt Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 103.99,
+  "weight_kg": 0.89,
+  "tags": [
+   "camping",
+   "outdoor"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.2,
+  "reviews": 677
+ },
+ {
+  "sku": "TRA-054",
+  "merchant_id": "trailhead",
+  "title": "Atlas Camping Gas Stove",
+  "category": "outdoor",
+  "subcategory": "stove",
+  "price_usd": 102.99,
+  "weight_kg": 0.58,
+  "tags": [
+   "camping"
+  ],
+  "battery": "none",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 410
+ },
+ {
+  "sku": "TRA-055",
+  "merchant_id": "trailhead",
+  "title": "Nimbus GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 437.99,
+  "weight_kg": 0.05,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 4.2,
+  "reviews": 64
+ },
+ {
+  "sku": "TRA-056",
+  "merchant_id": "trailhead",
+  "title": "Lumen GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 212.99,
+  "weight_kg": 0.09,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.7,
+  "reviews": 189
+ },
+ {
+  "sku": "TRA-057",
+  "merchant_id": "trailhead",
+  "title": "Ember GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 381.99,
+  "weight_kg": 0.07,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.0,
+  "reviews": 1351
+ },
+ {
+  "sku": "TRA-058",
+  "merchant_id": "trailhead",
+  "title": "Halo GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 154.99,
+  "weight_kg": 0.08,
+  "tags": [
+   "gift"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 3.9,
+  "reviews": 1412
+ },
+ {
+  "sku": "TRA-059",
+  "merchant_id": "trailhead",
+  "title": "Onyx GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 346.99,
+  "weight_kg": 0.07,
+  "tags": [
+   "outdoor",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1859
+ },
+ {
+  "sku": "TRA-060",
+  "merchant_id": "trailhead",
+  "title": "Onyx GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 257.99,
+  "weight_kg": 0.06,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.4,
+  "reviews": 1487
+ },
+ {
+  "sku": "TRA-061",
+  "merchant_id": "trailhead",
+  "title": "Drift GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 269.99,
+  "weight_kg": 0.1,
+  "tags": [
+   "outdoor",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.2,
+  "reviews": 2277
+ },
+ {
+  "sku": "TRA-062",
+  "merchant_id": "trailhead",
+  "title": "Halo GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 430.99,
+  "weight_kg": 0.06,
+  "tags": [
+   "gift",
+   "sport"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 3.9,
+  "reviews": 996
+ },
+ {
+  "sku": "TRA-063",
+  "merchant_id": "trailhead",
+  "title": "Quill GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 212.99,
+  "weight_kg": 0.1,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 0,
+  "rating": 4.4,
+  "reviews": 66
+ },
+ {
+  "sku": "TRA-064",
+  "merchant_id": "trailhead",
+  "title": "Ember GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 351.99,
+  "weight_kg": 0.06,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport",
+   "wireless"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 12,
+  "rating": 3.4,
+  "reviews": 1779
+ },
+ {
+  "sku": "TRA-065",
+  "merchant_id": "trailhead",
+  "title": "Nimbus GPS Outdoor Smartwatch",
+  "category": "outdoor",
+  "subcategory": "smartwatch",
+  "price_usd": 255.99,
+  "weight_kg": 0.07,
+  "tags": [
+   "gift",
+   "outdoor",
+   "sport"
+  ],
+  "battery": "contained",
+  "liquid": false,
+  "final_sale": false,
+  "ships_to": [
+   "US",
+   "CA",
+   "GB",
+   "DE",
+   "FR",
+   "AU",
+   "JP",
+   "BR",
+   "MX"
+  ],
+  "stock": 120,
+  "rating": 4.6,
+  "reviews": 1958
+ }
+]

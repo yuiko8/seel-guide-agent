@@ -1,0 +1,22 @@
+{
+ "nordlys": {
+  "name": "Nordlys Audio",
+  "category": "electronics"
+ },
+ "maple": {
+  "name": "Maple & Thread",
+  "category": "apparel"
+ },
+ "kiko": {
+  "name": "Kiko Home",
+  "category": "home"
+ },
+ "vela": {
+  "name": "Vela Beauty",
+  "category": "beauty"
+ },
+ "trailhead": {
+  "name": "Trailhead Gear",
+  "category": "outdoor"
+ }
+}
