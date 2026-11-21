@@ -33,6 +33,8 @@ from ..harness.tracing import Trace, write_jsonl
 from ..llm.base import LLMClient
 from ..rag.retriever import HybridRetriever, default_retriever
 from ..tools import commerce, kb
+from ..tools.protection import QuoteInput, quote_protection
+from ..tools.tickets import TicketInput, TicketService, classify_issue, extract_order_id
 from . import prompts
 from .llm_chain import AllModelsFailed, LLMChain
 from .rules import rule_route, template_respond
@@ -54,6 +56,7 @@ class Turn:
     cards: list[dict] = field(default_factory=list)
     chips: list[str] = field(default_factory=list)
     sources: list[dict] = field(default_factory=list)   # numbered, citable retrieved chunks
+    blocks: list[dict] = field(default_factory=list)    # extra UI blocks: protection_quote, ticket
     reply: str = ""
 
 
@@ -71,10 +74,11 @@ class Agent:
         self.gateway = Gateway(self.breakers, faults=faults, idem=self.store)
         self.chain = LLMChain(llms, self.gateway, timeout_s=settings.llm_timeout_s)
         self.ctx = context or ContextManager()
+        self.tickets = TicketService(self.store._conn, self.store._lock)
         self.nodes = {
             "intake": self.n_intake, "route": self.n_route, "clarify": self.n_clarify,
             "recommend": self.n_recommend, "shipping_qa": self.n_shipping_qa, "static": self.n_static,
-            "policy_qa": self.n_policy_qa,
+            "policy_qa": self.n_policy_qa, "protection": self.n_protection, "handoff": self.n_handoff,
             "respond": self.n_respond,
         }
         self.tool_spec = lambda name, model=None: CallSpec(
@@ -146,6 +150,7 @@ class Agent:
         out_msgs = [{"type": "text", "text": t.reply}]
         if t.cards:
             out_msgs.append({"type": "product_cards", "items": t.cards})
+        out_msgs.extend(t.blocks)
         if t.sources and re.search(r"\[\d+\]", t.reply):
             # Renumber cited sources 1..n in order of first appearance; drop uncited ones.
             by_n = {src["n"]: src for src in t.sources}
@@ -209,7 +214,15 @@ class Agent:
         if "injection_suspected" in t.flags or decision.injection_suspected:
             t.plan = {"type": "injection"}
             return "respond"
+        if decision.referenced_index is None and st.candidates:
+            low = t.user_message.lower()
+            for i, sku in enumerate(st.candidates, 1):
+                title = kb.catalog_by_sku().get(sku, {}).get("title", "")
+                if title and title.lower() in low:
+                    decision.referenced_index = i
+                    break
         prev_clarify, st.last_clarify = st.last_clarify, None
+        prev_intent = st.last_intent
         pending, st.pending = st.pending, None
         if pending and prev_clarify and self._answers_clarify(prev_clarify, decision, t.user_message):
             # The shopper answered our clarifying question: resume the parked question instead of starting over.
@@ -220,16 +233,26 @@ class Agent:
                 decision.merchant = self._merchant_from_text(t.user_message)
         changed = self._merge_slots(t, decision)
         t.trace.event("state", "slots", changed=changed, slots=st.slots.filled())
+        if (decision.intent in ("out_of_scope", "smalltalk") and prev_intent in ("protection_question", "shipping_question", "policy_question")
+                and (decision.referenced_index is not None or re.match(r"\s*(what|how) about\b", t.user_message, re.I))):
+            # "what about the cheapest one?" continues the previous topic with a new referent
+            t.trace.event("node", "topic_carryover", intent=prev_intent)
+            decision.intent = prev_intent
         if prev_clarify and decision.intent in ("out_of_scope", "smalltalk"):
             # "whatever is fine" / "no idea" right after a clarifying question = keep going, don't drop the flow
             t.trace.event("node", "clarify_followthrough", from_intent=decision.intent)
             decision.intent = "recommend"
+        st.last_intent = decision.intent
         if decision.intent == "recommend":
             return self._needs_clarify(t, prev_clarify) or "recommend"
         if decision.intent == "shipping_question":
             return "shipping_qa"
-        if decision.intent in ("policy_question", "protection_question"):
+        if decision.intent == "policy_question":
             return "policy_qa"
+        if decision.intent == "protection_question":
+            return "protection"
+        if decision.intent == "order_issue":
+            return "handoff"
         st.clarify_streak = 0
         return "static"
 
@@ -244,6 +267,10 @@ class Agent:
     def _answers_clarify(self, slot: str, d: RouteDecision, text: str) -> bool:
         if slot == "merchant":
             return bool(d.merchant or self._merchant_from_text(text))
+        if slot == "order_id":
+            return bool(extract_order_id(text) or re.search(r"\b(don'?t|do not|can'?t|cannot) (have|find|remember)|no idea|not sure", text, re.I))
+        if slot == "item":
+            return d.referenced_index is not None
         if slot == "country":
             return bool(d.slots.country) and d.intent not in ("recommend",) or (bool(d.slots.country) and len(text.split()) <= 4)
         return False
@@ -317,7 +344,6 @@ class Agent:
             t.plan = {"type": intent}
         else:
             msg = {
-                "order_issue": "I'm sorry about the trouble with your order. I'm connecting you with our support team, who can look into it.",
             }.get(intent)
             t.plan = {"type": "unsupported_yet", "message": msg}
         return "respond"
@@ -367,6 +393,12 @@ class Agent:
         t.plan = {"type": "recommend", "slots": s.filled(), "products": products,
                   "shipping_unavailable": missing_shipping, "total_matches": res["total_matches"]}
         t.cards = [self._card(p) for p in products]
+        for i, p in enumerate(products, 1):
+            sh = p.get("shipping") or {}
+            if p["final_sale"] or p["price_usd"] >= 200 or sh.get("delay_risk") == "high":
+                t.chips = [f"Is protection worth it for #{i}?"]
+                t.trace.event("node", "protection_nudge", sku=p["sku"])
+                break
         return "respond"
 
     def n_shipping_qa(self, t: Turn) -> str:
@@ -515,6 +547,107 @@ class Agent:
                   "_source_texts": {src["n"]: src["text"] for src in t.sources}}
         return "respond"
 
+    # ---------------- protection quote ----------------
+    def n_protection(self, t: Turn) -> str:
+        st, d = t.state, t.route
+        st.clarify_streak = 0
+        item = self._scope_item(t)
+        if item is None and len(st.candidates) == 1:
+            item = kb.catalog_by_sku()[st.candidates[0]]
+        wants_price = bool(re.search(r"how much|cost|price|worth|should i|recommend|need it|do i need", t.user_message, re.I))
+        if item is None:
+            if st.candidates and wants_price:
+                t.plan = {"type": "clarify", "missing": "item", "question": "Happy to price it. Which item is it for?"}
+                t.chips = [f"#{i} {kb.catalog_by_sku()[s]['title']}" for i, s in enumerate(st.candidates, 1)]
+                st.last_clarify, st.pending = "item", {"intent": "protection_question", "question": t.user_message}
+                st.clarify_streak += 1
+                return "respond"
+            return "policy_qa"   # general coverage question: answer from the terms
+        if not st.slots.country:
+            t.plan = {"type": "clarify", "missing": "country",
+                      "question": "Which country is it shipping to? The price depends on the delivery route."}
+            t.chips = ["United States", "United Kingdom", "Germany", "Canada", "Australia", "Japan"]
+            st.last_clarify, st.pending = "country", {"intent": "protection_question", "question": t.user_message}
+            st.clarify_streak += 1
+            st.candidates = st.candidates or [item["sku"]]
+            return "respond"
+        try:
+            q = self.gateway.call(self.tool_spec("protection", QuoteInput),
+                                  lambda sku, country: quote_protection(sku, country, self.s.sim_today),
+                                  {"sku": item["sku"], "country": st.slots.country}, trace=t.trace, deadline=t.deadline)
+        except HarnessError as e:
+            t.trace.degrade("protection_quote_unavailable", e.kind)
+            return "policy_qa"   # still explain coverage from the terms, just without a price
+        if not q.get("available"):
+            t.plan = {"type": "degraded", "message": f"Protection isn't available for this order: {q.get('reason')}"}
+            return "respond"
+        st.quotes[item["sku"]] = q
+        hits = self._retrieve(t, "what is covered and not covered return assurance delivery protection",
+                              {"doc_type": ["protection"]}, k=3)
+        if hits:
+            self._add_sources(t, hits, priority=2.5)
+        t.facts.append(Fact("quote", item["sku"], {"title": q["title"], "item_price_usd": q["item_price_usd"],
+                                                    "options": [{k: o[k] for k in ("name", "price_usd", "recommended", "reasons", "covers")}
+                                                                for o in q["options"]],
+                                                    "low_value_note": q["low_value_note"], "must_add_at_checkout": True}, 3.5))
+        t.plan = {"type": "protection_quote", "quote": q,
+                  "sources": [{"n": x["n"], "id": x["id"], "title": x["title"], "section": x["section"]} for x in t.sources],
+                  "_source_texts": {x["n"]: x["text"] for x in t.sources}}
+        t.blocks.append({"type": "protection_quote", "quote": {
+            "sku": q["sku"], "title": q["title"], "item_price_usd": q["item_price_usd"], "country": q["country"],
+            "low_value_note": q["low_value_note"],
+            "options": [{k: o[k] for k in ("type", "name", "price_usd", "rate_pct", "recommended", "reasons", "covers")}
+                        for o in q["options"]]}})
+        return "respond"
+
+    # ---------------- hand-off to support ----------------
+    def n_handoff(self, t: Turn) -> str:
+        st, d = t.state, t.route
+        st.clarify_streak = 0
+        user_texts = [m.content for m in st.messages if m.role == "user"][-4:]
+        issue_text = " ".join(filter(None, [d.question if d else None, t.user_message]))
+        issue = classify_issue(issue_text)
+        if issue == "other":
+            issue = classify_issue(" ".join(user_texts))
+        order_id = next((o for o in (extract_order_id(x) for x in reversed(user_texts)) if o), None)
+        no_order = re.search(r"\b(don'?t|do not|can'?t|cannot) (have|find|remember)|no idea|not sure", t.user_message, re.I)
+        if not order_id and not no_order and "order_id" not in st.slot_turns:
+            t.plan = {"type": "clarify", "missing": "order_id",
+                      "question": "I'm sorry about that. What's your order number? It's in your confirmation email "
+                                  "(if you can't find it, just say so and I'll still pass this on)."}
+            st.last_clarify, st.pending = "order_id", {"intent": "order_issue", "question": issue_text}
+            st.slot_turns["order_id"] = st.turn
+            return "respond"
+        summary = (f"Issue: {issue}. Order: {order_id or 'not provided'}. Destination: {st.slots.country or 'unknown'}. "
+                   f"Shopper said: " + " | ".join(x[:200] for x in user_texts))
+        args = {"session_id": st.session_id, "issue_type": issue, "summary": summary, "order_id": order_id,
+                "country": st.slots.country, "skus": st.candidates[:3], "request_id": t.trace.request_id}
+        spec = CallSpec(dependency="tool:tickets", timeout_s=self.s.tool_timeout_s, idempotent=False,
+                        retry=RetryPolicy(max_attempts=3, base_delay_s=0.05, max_delay_s=0.4), input_model=TicketInput)
+        try:
+            ticket = self.gateway.call(spec, self.tickets.create_ticket, args, trace=t.trace, deadline=t.deadline,
+                                       # request-scoped: protects retries of THIS turn; repeated complaints are
+                                       # deduped by the ticket service itself (one open ticket per issue/order)
+                                       idempotency_key=f"{st.session_id}:{t.trace.request_id}")
+        except HarnessError as e:
+            t.trace.degrade("ticket_unavailable", e.kind)
+            t.plan = {"type": "degraded", "message": "I'm sorry - I couldn't open a support ticket just now. Please try "
+                                                     "again in a minute, or use Contact Support in your order email."}
+            return "respond"
+        if not ticket.get("deduplicated"):
+            st.tickets.append(ticket)
+        st.status = "handoff"
+        if issue in ("lost", "damaged"):
+            hits = self._retrieve(t, f"parcel {issue} claim delivery protection", {"doc_type": ["protection"]}, k=2)
+            if hits:
+                self._add_sources(t, hits, priority=2.5)
+        t.facts.append(Fact("ticket", ticket["ticket_id"], ticket, 3.5))
+        t.plan = {"type": "handoff", "ticket": ticket, "issue": issue,
+                  "sources": [{"n": x["n"], "id": x["id"], "title": x["title"], "section": x["section"]} for x in t.sources],
+                  "_source_texts": {x["n"]: x["text"] for x in t.sources}}
+        t.blocks.append({"type": "ticket", "ticket": ticket})
+        return "respond"
+
     def n_respond(self, t: Turn) -> str:
         plan = t.plan or {"type": "out_of_scope"}
         if plan["type"] in DETERMINISTIC_PLANS:
@@ -581,6 +714,8 @@ def _plan_for_llm(plan: dict) -> dict:
         "recommend": "Introduce the picks in 1 short sentence each (why it fits). Mention delivery window and estimated landed total from FACTS. If shipping_unavailable is true, say delivery/tax info is temporarily unavailable. End with one helpful question.",
         "no_results": "Explain briefly why nothing matched (using excluded counts / restrictions) and suggest one concrete change.",
         "shipping_answer": "Answer the shipping/tax question for the destination using FACTS. If an item cannot ship, say why and suggest an alternative approach. If numbered sources are provided and you use them, cite them like [1].",
+        "protection_quote": "Give an honest recommendation for each option in 1-2 sentences using the quote's 'recommended' flag and 'reasons' (don't push protection that isn't recommended). Mention prices from FACTS, that it can only be added at checkout, and cite what's covered or excluded with [n] if sources are given.",
+        "handoff": "Apologize briefly, confirm the support ticket id and that a support specialist will follow up. Do NOT promise a refund, replacement, or outcome. If sources about Delivery Protection are given, say that if it was added at checkout a claim can be reviewed, citing [n].",
         "policy_answer": "Answer the question directly in 2-4 sentences using only the numbered sources, citing each statement like [1]. If the sources don't cover it, say so.",
     }.get(plan["type"], "Answer helpfully and briefly.")
     return p

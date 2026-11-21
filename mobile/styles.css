@@ -107,3 +107,16 @@ button { font: inherit; color: inherit; }
 .sources ol { margin: 8px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
 .src-title { color: var(--text); font-weight: 600; }
 .src-snippet { line-height: 1.4; }
+
+.panel { max-width: 92%; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 8px; }
+.panel-kicker { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--brand); }
+.panel-note { font-size: 12px; color: var(--muted); }
+.opt { border: 1px solid var(--border); border-radius: 12px; padding: 10px; display: flex; flex-direction: column; gap: 4px; }
+.opt.rec { border-color: var(--brand); background: var(--brand-soft); }
+.opt-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.opt-name { font-weight: 600; font-size: 14px; }
+.opt-price { font-weight: 700; font-variant-numeric: tabular-nums; }
+.opt-covers { font-size: 12px; color: var(--muted); line-height: 1.4; }
+.opt-verdict { font-size: 12px; font-weight: 600; }
+.opt.rec .opt-verdict { color: var(--brand); }
+.opt-reasons { margin: 0; padding-left: 18px; font-size: 12px; line-height: 1.4; }

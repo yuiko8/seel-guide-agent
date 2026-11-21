@@ -22,6 +22,9 @@ PROMISES = [
         r"\b(claim|refund)\b.{0,30}\b(will be|is|has been)\s+approved",
         r"\b(will|is going to)\s+(definitely|certainly)\s+arrive",
         r"\bi (have|'ve) (issued|processed|approved) (a|your) refund",
+        r"\b(refund|replacement|reshipment) (is|will be) (on its way|issued|processed|sent)",
+        r"\b(we|i)('ll| will) (send|ship) (you )?(a )?(replacement|new one)",
+        r"\b(don'?t worry|rest assured).{0,40}\b(refund|replace|money back)",
     ]
 ]
 LEAKS = re.compile(r"\b(system prompt|FACTS block|json|tool call|function call|as an ai language model|\[(product|shipping|quote|policy_chunk):)", re.I)

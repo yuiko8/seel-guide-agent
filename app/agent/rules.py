@@ -19,12 +19,13 @@ RECIPIENTS = ["girlfriend", "boyfriend", "wife", "husband", "partner", "mom", "m
               "brother", "friend", "colleague", "coworker", "boss", "son", "daughter", "kid", "grandma", "grandpa",
               "myself", "teen"]
 
-ORDER_ISSUE = re.compile(r"\b(lost|never (arrived|came)|didn'?t (arrive|come)|hasn'?t arrived|not arrived|damaged|broken|"
+ORDER_ISSUE = re.compile(r"\b(nothing (has )?(arrived|come)|still (nothing|waiting|no sign)|lost|never (arrived|came)|didn'?t (arrive|come)|hasn'?t arrived|not arrived|damaged|broken|"
                          r"stolen|where is my (order|package|parcel)|my (order|package|parcel)|tracking|refund me|"
                          r"want (a|my) refund|charged twice|wrong item)\b", re.I)
-PROTECTION = re.compile(r"\b(protection|insurance|insure|assurance|protect|coverage|covered|claim)\b", re.I)
+PROTECTION = re.compile(r"\b(protection|insurance|insure|assurance|protect|coverage|covered|claim|worth it)\b", re.I)
 POLICY = re.compile(r"\b(return|returns|returnable|refund|exchange|warranty|final sale|restocking|send (it )?back|mail (it )?back|"
                     r"go back|postage|money back|defective|stopped working|rash|allergic)\b", re.I)
+POLICY_Q = re.compile(r"\?|\b(can i|could i|do you|does|is it|how|what|policy|allowed|am i able)\b", re.I)
 MERCHANT_ALIASES = {"nordlys": "nordlys", "maple": "maple", "maple & thread": "maple", "kiko": "kiko", "vela": "vela",
                     "trailhead": "trailhead"}
 SHIPPING = re.compile(r"\b(how long|delivery|deliver|arrive|shipping|ship|customs|duty|duties|tax|taxes|vat|gst|ddp|import|"
@@ -118,9 +119,15 @@ def rule_route(text: str, state: SessionState | None = None) -> RouteDecision:
     m = re.search(r"\b(first|1st|second|2nd|third|3rd|last)\b(?: one| option| item| pick)?", low)
     if m and state and state.candidates:
         ref = ORDINALS[m.group(1)]
-    m2 = re.search(r"\b(?:#|number |option )(\d)\b", low)
+    m2 = re.search(r"(?:#|\bnumber |\boption |\bpick )(\d)\b", low)
     if m2 and state and state.candidates:
         ref = int(m2.group(1))
+    if state and state.candidates and ref is None:
+        prices = [kb.catalog_by_sku()[s_]["price_usd"] for s_ in state.candidates if s_ in kb.catalog_by_sku()]
+        if prices and re.search(r"\b(cheapest|least expensive|lowest price)\b", low):
+            ref = prices.index(min(prices)) + 1
+        elif prices and re.search(r"\b(most expensive|priciest|highest price)\b", low):
+            ref = prices.index(max(prices)) + 1
 
     has_product_signal = bool(kws or cat or bmax or recipient or modifiers)
     hypothetical = re.search(r"\b(policy|what does .{1,30} say|what if|what happens if|in case|would|if (it|the|my) )", low)
@@ -131,7 +138,7 @@ def rule_route(text: str, state: SessionState | None = None) -> RouteDecision:
     elif hypothetical and ORDER_ISSUE.search(text):
         has_store = any(re.search(rf"\b{re.escape(a)}\b", low) for a in MERCHANT_ALIASES)
         intent = "policy_question" if (has_store or kws) else "protection_question"
-    elif POLICY.search(text) and not (has_product_signal and RECOMMEND.search(text)):
+    elif POLICY.search(text) and (not has_product_signal or POLICY_Q.search(text)) and not (has_product_signal and RECOMMEND.search(text)):
         intent = "policy_question"
     elif SHIPPING.search(text) and (ref or SHIP_QUESTION.search(text) or not (kws or cat or recipient or bmax)):
         intent = "shipping_question"
@@ -241,6 +248,33 @@ def template_respond(plan: dict) -> str:
         if store and ra:
             lines.append(f"• If Return Assurance was added at checkout: {_first_sentences(texts.get(ra['n'], ''), 1)} [{ra['n']}]")
         return "\n".join(lines)
+    if t == "protection_quote":
+        q = plan["quote"]
+        lines = [f"Protection options for {q['title']} ({_money(q['item_price_usd'])}):"]
+        for o in q["options"]:
+            verdict = "worth considering" if o["recommended"] else "probably not needed"
+            why = (" " + " ".join(o["reasons"])) if o["recommended"] and o["reasons"] else ""
+            lines.append(f"• {o['name']} — {_money(o['price_usd'])}, {verdict}.{why}")
+        if q.get("low_value_note"):
+            lines.append(q["low_value_note"])
+        lines.append("Protection can only be added at checkout, and every claim is reviewed.")
+        srcs = plan.get("sources") or []
+        if srcs:
+            lines[-1] += f" [{srcs[0]['n']}]"
+        return "\n".join(lines)
+    if t == "handoff":
+        tk = plan["ticket"]
+        what = {"lost": "your parcel hasn't arrived", "damaged": "your item arrived damaged", "late": "your order is late",
+                "wrong_item": "you received the wrong item", "refund": "you'd like a refund"}.get(plan.get("issue"), "there's a problem with your order")
+        if tk.get("deduplicated"):
+            msg = f"You already have an open support ticket for this ({tk['ticket_id']}). Our support team will follow up there."
+        else:
+            msg = (f"I'm sorry {what}. I've opened support ticket {tk['ticket_id']} and passed on the details, "
+                   f"so you won't need to repeat yourself. A support specialist will follow up with you.")
+        dp = next((x for x in (plan.get("sources") or []) if x["id"] == "protection#delivery-protection"), None)
+        if dp and plan.get("issue") in ("lost", "damaged"):
+            msg += f" If you added Delivery Protection at checkout, lost or damaged parcels can be claimed and are reviewed [{dp['n']}]."
+        return msg
     if t == "smalltalk":
         return "Hi! I can help you find a gift or product, check delivery times and import taxes to your country, and explain return policies. What are you shopping for?"
     if t == "out_of_scope":

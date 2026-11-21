@@ -92,6 +92,10 @@ def create_app(agent: Agent | None = None) -> FastAPI:
     def traces(limit: int = 50):
         return agent.store.recent_traces(min(limit, 200))
 
+    @app.get("/api/tickets")
+    def tickets(limit: int = 50):
+        return agent.tickets.list(min(limit, 200))
+
     @app.post("/api/admin/faults/{dependency}")
     def set_fault(dependency: str, body: FaultIn):
         if not chaos_enabled:

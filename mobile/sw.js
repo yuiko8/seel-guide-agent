@@ -1,6 +1,6 @@
 // App-shell service worker: shell is cache-first (works offline), API is network-only
 // (answers must be fresh; prices and taxes are never served from cache).
-const CACHE = "atlas-shell-v2";
+const CACHE = "atlas-shell-v3";
 const SHELL = ["/", "/index.html", "/styles.css", "/app.js", "/manifest.webmanifest", "/icon.svg"];
 
 self.addEventListener("install", (e) => {

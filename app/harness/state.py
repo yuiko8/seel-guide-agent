@@ -56,6 +56,7 @@ class SessionState(BaseModel):
     last_clarify: str | None = None
     pending: dict | None = None        # question parked while we asked a clarifying question {intent, question}
     last_node: str | None = None
+    last_intent: str | None = None
     candidates: list[str] = Field(default_factory=list)        # SKUs shown last
     quotes: dict[str, dict] = Field(default_factory=dict)
     tickets: list[dict] = Field(default_factory=list)

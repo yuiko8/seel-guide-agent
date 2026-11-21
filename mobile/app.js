@@ -25,6 +25,8 @@ const DEGRADE_COPY = {
   template_reply: "Running in backup mode — answers may be simpler than usual.",
   deadline: "That took longer than expected.",
   retrieval_unavailable: "Policy lookup is temporarily unavailable.",
+  protection_quote_unavailable: "Protection pricing is temporarily unavailable.",
+  ticket_unavailable: "We couldn't reach support just now.",
 };
 
 const rid = () => (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random()).replace(/-/g, "").slice(0, 20);
@@ -99,6 +101,48 @@ function card(item) {
   return c;
 }
 
+function quoteCard(q) {
+  const c = el("article", "panel");
+  c.append(el("div", "panel-kicker", "Protection options"));
+  c.append(el("div", "card-title", q.title));
+  c.append(el("div", "card-merchant", `Item ${money(q.item_price_usd)} · shipping to ${q.country}`));
+  q.options.forEach((o) => {
+    const opt = el("div", "opt" + (o.recommended ? " rec" : ""));
+    const head = el("div", "opt-head");
+    head.append(el("span", "opt-name", o.name));
+    head.append(el("span", "opt-price", money(o.price_usd)));
+    opt.append(head);
+    opt.append(el("div", "opt-covers", o.covers));
+    const verdict = el("div", "opt-verdict", o.recommended ? "Worth considering" : "Probably not needed");
+    opt.append(verdict);
+    if (o.recommended && o.reasons.length) {
+      const ul = el("ul", "opt-reasons");
+      o.reasons.forEach((r) => ul.append(el("li", null, r)));
+      opt.append(ul);
+    }
+    c.append(opt);
+  });
+  if (q.low_value_note) c.append(el("div", "panel-note", q.low_value_note));
+  c.append(el("div", "panel-note", "Add at checkout only. Claims are reviewed; approval isn't guaranteed."));
+  return c;
+}
+
+function ticketCard(t) {
+  const c = el("article", "panel ticket");
+  c.append(el("div", "panel-kicker", t.deduplicated ? "Existing support ticket" : "Support ticket opened"));
+  const head = el("div", "opt-head");
+  head.append(el("span", "opt-name", t.ticket_id));
+  head.append(el("span", "badge " + (t.priority === "high" ? "warn" : "ok"), t.priority === "high" ? "High priority" : "Normal priority"));
+  c.append(head);
+  const dl = el("dl", "facts");
+  const row = (k, v) => { dl.append(el("dt", null, k)); dl.append(el("dd", null, v)); };
+  row("Issue", (t.issue_type || "other").replace("_", " "));
+  row("Order", t.order_id || "Not provided");
+  row("Status", "Open — a specialist will follow up");
+  c.append(dl);
+  return c;
+}
+
 function addBot(resp) {
   const row = el("div", "row bot");
   for (const m of resp.messages) {
@@ -108,6 +152,8 @@ function addBot(resp) {
       m.items.forEach((it) => wrap.append(card(it)));
       row.append(wrap);
     }
+    if (m.type === "protection_quote") row.append(quoteCard(m.quote));
+    if (m.type === "ticket") row.append(ticketCard(m.ticket));
     if (m.type === "sources" && m.items.length) {
       const det = el("details", "sources");
       det.append(el("summary", null, `Sources (${m.items.length})`));
